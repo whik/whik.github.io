@@ -1,0 +1,109 @@
+# Site settings
+title: 王超的独立博客
+SEOTitle: 王超的独立博客 | WangChao Blog
+header-img: img/home-bg.jpg
+email: 1490789115@qq.com
+description: "王超的独立博客"
+keyword: "王超, 王超, 王超的博客, 王超的独立博客, Blog, 博客, 个人网站"
+url: "whik.gitee.io"              # your host, for absolute URL
+baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
+
+
+
+# SNS settings
+RSS: false
+weibo_username:     wangchao149
+zhihu_username:     wangchao149
+#github_username:    shaoguoji
+#twitter_username:  beyondsgy
+#facebook_username:  beyondsgy
+
+
+
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+highlighter: rouge
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
+anchorjs: false                          # if you want to customize anchor. check out line:181 of `post.html`
+
+
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+gems: [jekyll-paginate]
+
+
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+
+
+
+# Disqus settings
+#disqus_username: _your_disqus_short_name_
+
+# Duoshuo settings
+#duoshuo_username: shaoguoji
+# Share component is depend on Comment so we can NOT use share only.
+#duoshuo_share: true                     # set to false if you want to use Comment without Sharing
+
+# Youyan settings
+#youyan_username: shaoguoji
+# Share component is depend on Comment so we can NOT use share only.
+#youyan_share: true                     # set to false if you want to use Comment without Sharing
+
+
+# gentie settings
+# gentie_product_key: 265c82c8980f42c18a066337c8ab26bc
+# Share component is depend on Comment so we can NOT use share only.
+# gentie_share: false  
+
+# gitment settings
+#gitment_share: true  
+#gitment_username: shaoguoji
+#gitment_repo: shaoguoji.github.io
+#gitment_client_id: 1e061ab34f1c10c458a5
+#gitment_client_secret: b629572131c7e0890d75c4a291013c4e5396a8b9
+
+
+# Analytics settings
+#Baidu Analytics
+#ba_track_id: aa77dd1af62bf0b3cb69ac8ee616f047
+ba_track_id: 5b8e5df3cd62646160061c605ef80a8f    
+# Google Analytics
+#ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
+#ga_domain: huangxuan.me
+
+
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "玩玩单片，写写代码，画画板子，拍拍照片，生活还是这么美好。"
+sidebar-avatar: img/avatar-wcc.png  # use absolute URL, seeing it's used in both `/` and `/about/`
+# old pic http://odaps2f9v.bkt.clouddn.com/17-2-18/70710645-file_1487416001693_3e6.png
+
+
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+
+
+
+# Friends
+friends: [
+    {
+        title: "LanyuanXiaoyao's Blog",
+        href: "http://www.lanyuanxiaoyao.com"
+    },
+    {
+        title: "IT`huhui",
+        href: "http://ithuhui.cn/"
+    }
+]
