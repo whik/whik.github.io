@@ -6,145 +6,22 @@ header-img: "img/about-bg.jpg"
 ---
 
 <!-- Language Selector -->
-<select onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
+<select class="sel-lang" onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
     <option value="0" selected> 中文 Chinese </option>
     <option value="1"> 英文 English </option>
 </select>
 
 <!-- Chinese Version -->
 <div class="zh post-container">
-
-    <!--copied from markdown -->
-    <blockquote><p>玩玩单片机，写写代码，画画板子，拍拍照片。<br>
-    爱生活，更爱体验生活。</p></blockquote>
-
-    <p>Hey，我是<strong>王超</strong>，一名大四学生，就读于<a href="http://www.***.edu.cn/">**学院</a> ·电子科学与技术 2014 级，热爱物联网，擅长动手。</p>
-
+    {% capture about_zh %}{% include about/zh.md %}{% endcapture %}
+    {{ about_zh | markdownify }}
 </div>
 
 <!-- English Version -->
 <div class="en post-container">
-    <blockquote><p><br>
-    </p></blockquote>
-
-    <p>My name is <strong>WangChao(王超)</strong>. I'm a senior, studied Computer science and technology in <a href="http://www.****=.edu.cn/">** University of Agriculture and Engineering</a>. I like playing the guitar and making things.</p>
-
+    {% capture about_en %}{% include about/en.md %}{% endcapture %}
+    {{ about_en | markdownify }}
 </div>
-
-<!-- Handle Language Change -->
-<script type="text/javascript">
-    // get nodes
-    var $zh = document.querySelector(".zh");
-    var $en = document.querySelector(".en");
-    var $select = document.querySelector("select");
-
-    // bind hashchange event
-    window.addEventListener('hashchange', _render);
-
-    // handle render
-    function _render(){
-        var _hash = window.location.hash;
-        // en
-        if(_hash == "#en"){
-            $select.selectedIndex = 1;
-            $en.style.display = "block";
-            $zh.style.display = "none";
-        // zh by default
-        }else{
-            // not trigger onChange, otherwise cause a loop call.
-            $select.selectedIndex = 0;
-            $zh.style.display = "block";
-            $en.style.display = "none";
-        }
-    }
-
-    // handle select change
-    function onLanChange(index){
-        if(index == 0){
-            window.location.hash = "#zh"
-        }else{
-            window.location.hash = "#en"
-        }
-    }
-
-    // init
-    _render();
-</script>
-
-<!-- gitment评论 BEGIN  -->
-<div id="gitment"></div>
-<link rel="stylesheet" href="{{ "/css/default.css" | prepend: site.baseurl }}">
-<script src="{{ "/js/gitment.browser.js " | prepend: site.baseurl }}"></script>
-{% if site.gitment_share && site.gitment_username %}
-<script> 
-var gitment = new Gitment({
-     owner: "{{site.gitment_username}}",
-     repo: "{{site.gitment_repo}}",
-     oauth: {
-         client_id: "{{site.gitment_client_id}}",
-         client_secret: "{{site.gitment_client_secret}}",
-     },
-})
-gitment.render('gitment')
-</script>
-<!-- gitment评论 END -->
-{% endif %}
-
-{% if site.gentie_share && site.gentie_product_key %}
-<!-- 网易云跟帖 BEGIN  -->
-<div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
-<script>
-var cloudTieConfig = {
-    url: document.location.href, 
-    sourceId: "",
-    productKey: "{{site.gentie_product_key}}",
-    target: "cloud-tie-wrapper"
-};
-</script>
-<script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
-<!-- 网易云跟帖 BEGIN -->
-{% endif %}
-
-{% if site.youyan_share %}
-<!-- 友言UY BEGIN -->
-<div id="uyan_frame"></div>
-<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2128031"></script>
-<!-- 友言UY END -->
-{% endif %}
-
-{% if site.duoshuo_username %}
-<!-- 多说评论框 start -->
-<div class="comment">
-    <div class="ds-thread"
-    {% if site.duoshuo_username == "huxblog" %}
-        data-thread-id="1187623191091085319"
-    {% else %}
-        data-thread-key="{{site.duoshuo_username}}/about"
-    {% endif %}
-
-    data-title="{{page.title}}"
-    data-url="{{site.url}}/about/"></div>
-</div>
-<!-- 多说评论框 end -->
-
-<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-<script type="text/javascript">
-    // dynamic User hacking by Hux
-    var _user = '{{site.duoshuo_username}}';
-
-    // duoshuo comment query.
-    var duoshuoQuery = {short_name: _user };
-    (function() {
-        var ds = document.createElement('script');
-        ds.type = 'text/javascript';ds.async = true;
-        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-        ds.charset = 'UTF-8';
-        (document.getElementsByTagName('head')[0]
-         || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-</script>
-<!-- 多说公共JS代码 end -->
-{% endif %}
 
 
 {% if site.disqus_username %}
@@ -162,7 +39,6 @@ var cloudTieConfig = {
     var disqus_shortname = "{{site.disqus_username}}";
     var disqus_identifier = "{{site.disqus_username}}/{{page.url}}";
     var disqus_url = "{{site.url}}{{page.url}}";
-
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
