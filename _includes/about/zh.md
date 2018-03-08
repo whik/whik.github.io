@@ -1,31 +1,64 @@
-> 写写代码，做做设计，  
-> 离开世界之前，一切都是过程。
+<h1 style="text-align:left">王超超 </h1>
 
-Hey，我是黄玄，病毒种，进化程度不明，多出没于[博客](https://huangxuan.me)、[微博](weibo.com/huxpro)、[知乎](https://www.zhihu.com/people/huxpro/pins/posts)、[Twitter](https://twitter.com/Huxpro/)、[Github](http://github.com/huxpro)、[Medium](https://medium.com/@Huxpro) 等地带，绝招尚在开发中。
+<h3 style="text-align:left">
+单片机工程师
+<br>
+Tel：(+86)182-4226-1194
+<br>
+E-mail：1490789115@qq.com
+</h3>
+----------
 
-职业是软件工程师，[Web 工会](https://medium.com/ben-and-dion/team-web-3315aa447fb2#.359a9c6cl)活跃成员。曾被招募为淘宝网 · [阿里旅行](http://alitrip.com)前端工程师、微影时代 · [微票儿](http://www.wepiao.com/?r=movie)前端基础工程团队负责人、[饿了么](https://ele.me/) · 大前端团队 · [PWA 顾问](https://medium.com/elemefe/upgrading-ele-me-to-progressive-web-app-2a446832e509)。
+<p align="left">
+画画板子，写写代码。  
+<br>
+最精彩的，其实就是世界本身。
+</p>
 
-一些作品和开源软件项目，👉 戳 [Portfolio](/portfolio)、[Github](http://github.com/huxpro)、[演说.io](http://https://zhuanlan.zhihu.com/p/21280918)。 
 
+　　Hey，我是王超，一名大四学生，目前就读于[鞍山师范学院](http://www.asnc.edu.cn/)-电子科学与技术专业2014级，热爱单片机软硬件开发，擅长动手，想通过不断的努力学习做出好玩的东西。经常出没于[博客](http://www.wangchaochao.top)、[微博](http://weibo.com/wangchao149)、[Gitee码云](https://gitee.com/whik)、[Github](https://github.com/whik)、[知乎](https://www.zhihu.com/people/wangchao149)等地带，
 
-##### Talks
+---
+### 工作经历
 
-- [Upgrading to Progressive Web Apps][9] · [JSConf CN 上海 2017](http://2017.jsconf.cn/)
-- Building Progressive Web Apps · [CSDI 广州 2017](http://www.csdisummit.com/)
-- The State of Progressive Web App · GDG IO Redux 北京 2017
-- 炒冷饭 · PWA 到底是个什么玩意？· Baidu HQ 北京 2017
-- [Service Worker 101][5] · GDG DevFest 北京 2016
-- [Progressive Web App，复兴序章][4] · [QCon 上海 2016](http://2016.qconshanghai.com/presentation/3111)
-- Progressive Web App 之我见 · GDG IO Redux 北京 2016
-- [CSS Still Sucks 2015][2] · 2015
-- [JavaScript 模块化七日谈][1] · 2015
+- 2017.09 – 2018.02　　　　[福玛特(北京)机器人科技股份有限公司](http://www.fmart.com.cn/)-研发部　　　 电子实习生
+    
+　　１.负责扫地机器人回充底座主板原理图和PCB的设计，现已经量产
+ 
+　　２.负责扫地机器人虚拟墙传感器模块原理图和PCB的设计，现已经量产
+ 
+　　３.编写主板各模块的测试程序和测试文档
 
-[1]: //huangxuan.me/2015/07/09/js-module-7day/
-[2]: //huangxuan.me/2015/12/28/css-sucks-2015/
-[3]: //huangxuan.me/2016/06/05/pwa-in-my-pov/
-[4]: //huangxuan.me/2016/10/20/pwa-qcon2016/
-[5]: //huangxuan.me/2016/11/20/sw-101-gdgdf/
-[6]: https://yanshuo.io/assets/player/?deck=58ac8598b123db0067292f92 "PWA Rehashing"
-[7]: https://yanshuo.io/assets/player/?deck=593ad6fbfe88c2006a0a0d6d "The State of PWA"
-[8]: https://yanshuo.io/assets/player/?deck=594d673d570c357d0698a950 "Building PWA"
-[9]: //huangxuan.me/jsconfcn2017/
+---    
+### 专业技能
+
+- 熟练掌握51、STM32单片机及外围常用的传感器、显示模块、通信模块的开发使用
+- 熟练使用AltiumDesigner进行原理图和PCB的设计，BOM/Gerber生产文件的导出
+- 熟练使用万用表、示波器、逻辑分析仪、Jlink/ST-Link等设备进行软硬件的调试
+- 熟练掌握C语言，具备规范的编程习惯和良好的文档编辑能力
+- 了解常用的串口、I2C、SPI、红外等通信协议
+- 了解PID自动控制算法的基本应用
+- 了解Linux系统的基本操作指令，Git的基本使用
+- 熟练焊接0603/0805/SOP/QFP/QFN等封装元器件、了解多种元器件的封装规格。 
+- 良好的团队合作精神以及语言表达、沟通能力
+
+---
+### 教育背景
+
+- 2014.09 – 2018.07 　　　　　鞍山师范学院   　　　　 电子科学与技术  　  　　　       本科
+
+---
+### 荣誉奖励
+
+- 2015-2016学年度　“**国家励志奖学金**”
+- 通过　“**全国计算机等级考试-二级C语言程序设计**”　，成绩优异
+- 鞍山师范学院第四届专业技能大赛　“**基于STM32的OLED多功能蓝牙时钟**”　项目获得　“**一等奖**”
+- 鞍山师范学院2014-2015学年度　”**优秀共青团员**”
+
+----------
+
+---
+### 兴趣爱好
+
+- 爱好计算机技术、摄影、视频制作、图片处理、看电影、骑行
+
