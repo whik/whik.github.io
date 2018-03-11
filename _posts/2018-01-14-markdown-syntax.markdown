@@ -105,13 +105,9 @@ I get 10 times more traffic from [Google][1] than from
 
 ![图片1](http://img1.imgtn.bdimg.com/it/u=4131634322,487666839&fm=27&gp=0.jpg "图片1")
 
+路过图床 网站生成的图片外链
 
-插入仓库内的图片
-
-<figure>
-<a><img src="{{site.url}}/img/post-bg-markdown.jpg"></a>
-</figure>
-
+![路过图床网站](https://s1.ax1x.com/2018/03/11/9WRdUO.jpg)
 
 ## 七、代码
 
