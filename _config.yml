@@ -5,7 +5,7 @@ header-img: img/home-bg.jpg
 email: 1490789115@qq.com
 description: "王超的独立博客"
 keyword: "王超, 王超, 王超的博客, 王超的独立博客, Blog, 博客, 个人网站"
-url: "whik.gitee.io"              # your host, for absolute URL
+url: "www.wangchaochao.top"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 
@@ -76,7 +76,7 @@ kramdown:
 # Analytics settings
 #Baidu Analytics
 #ba_track_id: aa77dd1af62bf0b3cb69ac8ee616f047
-ba_track_id: 5b8e5df3cd62646160061c605ef80a8f    
+ba_track_id: 8426de655a9a773efd3509a0c388c8a7 
 # Google Analytics
 #ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
 #ga_domain: huangxuan.me
@@ -99,11 +99,24 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 # Friends
 friends: [
     {
-        title: "LanyuanXiaoyao's Blog",
-        href: "http://www.lanyuanxiaoyao.com"
+        title: "国际哥的独立博客",
+        href: "http://www.shaoguoji.cn/"
     },
     {
-        title: "IT`huhui",
-        href: "http://ithuhui.cn/"
-    }
+        title: "黄玄的博客",
+        href: "https://huangxuan.me/"
+    },
+    {
+        title: "路过图床"
+        href: "https://imgchr.com/"
+    },
+    {
+        title: "静觅|崔庆才的博客"
+        href: "https://cuiqingcai.com/"
+    },
+    {
+        title: "物联网|吴川斌的博客"
+        href: "http://www.mr-wu.cn/"
+    }    
+
 ]
