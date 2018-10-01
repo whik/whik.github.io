@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      一个将十六进制转换为二进制字符数组的函数
-subtitle:	C语言学习
+subtitle:	 C语言学习
 date:       2018-10-1 18:20:29 +0800
 author:     Wang Chao
 header-img: img/Code1.jpg
