@@ -169,6 +169,11 @@ Microsemi SoftConsole delete hex file line 42
 
 ```
 
+## 文件下载
+
+
+[del_hex_line1.rar](http://wcc-blog.oss-cn-beijing.aliyuncs.com/BlogFile/del_hex_line1.rar)
+
 
 ## 运行结果：
 
