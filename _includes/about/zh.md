@@ -1,7 +1,7 @@
 <h1 style="text-align:left">王超 </h1>
 
 <h3 style="text-align:left">
-单片机工程师
+电子爱好者
 <br>
 TEL：‭43F52D0CA‬
 <br>
