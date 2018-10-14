@@ -85,7 +85,7 @@ ba_track_id: 8426de655a9a773efd3509a0c388c8a7
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "玩玩单片，写写代码，画画板子，拍拍照片，生活还是这么美好。"
+sidebar-about-description: "调调板子，谢谢代码，猝猝死，生活还是这么美好。"
 sidebar-avatar: /img/avatar-wcc.png  # use absolute URL, seeing it's used in both `/` and `/about/`
 # old pic http://odaps2f9v.bkt.clouddn.com/17-2-18/70710645-file_1487416001693_3e6.png
 
