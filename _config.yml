@@ -99,8 +99,8 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 # Friends
 friends: [
     {
-        title: "国际哥的独立博客",
-        href: "http://www.shaoguoji.cn/"
+        title: "阿里OSS管理控制台",
+        href: "https://oss.console.aliyun.com/overview"
     },
     {
         title: "黄玄的博客",
