@@ -66,11 +66,11 @@ kramdown:
 # gentie_share: false  
 
 # gitment settings
-#gitment_share: true  
-#gitment_username: shaoguoji
-#gitment_repo: shaoguoji.github.io
-#gitment_client_id: 1e061ab34f1c10c458a5
-#gitment_client_secret: b629572131c7e0890d75c4a291013c4e5396a8b9
+gitment_share: true  
+gitment_username: whik
+gitment_repo: whik.github.io
+gitment_client_id: 8e11bd6af0a339d8007f
+gitment_client_secret: f257dd2a71e396ad57aa9aef0ea3ab85331e006b
 
 
 # Analytics settings
