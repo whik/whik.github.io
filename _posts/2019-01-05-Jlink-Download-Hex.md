@@ -109,8 +109,6 @@ JLink_Windows_V614b软件下载链接：[JLink_Windows_V614b.exe](https://wcc-bl
 
 ----
 
-欢迎大家关注[我的个人博客](http://www.wangchaochao.top/)：http://www.wangchaochao.top
+欢迎大家关注[我的个人博客](http://www.wangchaochao.top/)
 
 或微信扫码关注我的公众号
-
-![](https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/%E6%B1%82%E5%85%B3%E6%B3%A8.jpg)
