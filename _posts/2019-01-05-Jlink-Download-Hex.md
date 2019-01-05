@@ -79,7 +79,7 @@ JLink支持Hex、Bin等多种文件类型，
 ![](https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/Jlink02-08.jpg)
 
 
-### 9.工程配置为自动运行
+### 8.工程配置为自动运行
 
 如果想让每次下载完成后，程序自动运行，而不用复位。可以使用工程配置下的自动运行选项。打开Option->Project Setting，切换到Production选项，勾选Start Application，就可以让程序自动运行。
 
