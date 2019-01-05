@@ -91,9 +91,7 @@ JLink支持Hex、Bin等多种文件类型，
 
 ### JLink软件的下载
 
-公众号后台回复“JLINK”，可获得JLink_Windows_V614b.exe软件下载链接。
-
-![](https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/Jlink02-12.jpg)
+JLink_Windows_V614b软件下载链接：[JLink_Windows_V614b.exe](https://wcc-blog.oss-cn-beijing.aliyuncs.com/BlogFile/JLink_Windows_V614b.exe)
 
 ---
 
