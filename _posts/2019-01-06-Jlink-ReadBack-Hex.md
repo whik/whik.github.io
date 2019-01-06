@@ -85,7 +85,7 @@ tag:
 
 ### 6.保存读取到的程序
 
-选项File-> Save data file或者是Sav data file as，保存类型根据需要选择，建议选择Hex格式，已经包含了地址信息。
+选项File-> Save data file或者是Save data file as，保存类型根据需要选择，建议选择Hex格式，已经包含了地址信息。
 
 ![](https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/ReadBack-05.jpg)
 
