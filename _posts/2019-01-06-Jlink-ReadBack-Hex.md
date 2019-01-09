@@ -172,17 +172,17 @@ JLink_Windows_V614b软件下载链接：[JLink_Windows_V614b.exe](https://wcc-bl
 
 历史精选文章：
 
-- [Jlink使用技巧之J-Scope虚拟示波器功能](https://mp.weixin.qq.com/s?__biz=MzUzNzk2NTMxMw==&mid=2247483680&idx=1&sn=882e829f182219eb9293d9e010567748&chksm=fadfa74ecda82e58c1455db594d23d3cc121dfe019099cff3f7f297d4cb2459493d940e4b45c#rd)
+- [Jlink使用技巧之虚拟串口功能](http://www.wangchaochao.top/2019/01/09/Jlink-UART/)
 
-- [Jlink使用技巧之单独下载HEX文件到单片机](https://mp.weixin.qq.com/s?__biz=MzUzNzk2NTMxMw==&mid=2247483804&idx=1&sn=46ed9785a48d421325fa2f4b03a6c11c&chksm=fadfa7f2cda82ee4205020653b469ef9959d29a3a3a0c3922c8870bd17b877f8e80ac0918961&token=703787322&lang=zh_CN#rd)
+- [Jlink使用技巧之读取STM32内部的程序](http://www.wangchaochao.top/2019/01/06/Jlink-ReadBack-Hex/)
 
-- [百度智能手环方案开源(含源码，原理图，APP，通信协议等)](https://mp.weixin.qq.com/s?__biz=MzUzNzk2NTMxMw==&mid=2247483787&idx=1&sn=a4d478dd46dfcf94a0c8f1f369062df8&chksm=fadfa7e5cda82ef3c9320aeba5d3e6e6d60dc32d80c570f5412198ec289bfec9e50a4814c8cf&token=1936031160&lang=zh_CN#rd)
+- [Jlink使用技巧之J-Scope虚拟示波器功能](http://www.wangchaochao.top/2018/10/17/JScope/)
 
-- [如何在Keil-MDK开发环境生成Bin格式文件](https://mp.weixin.qq.com/s?__biz=MzUzNzk2NTMxMw==&mid=2247483671&idx=1&sn=20422bf86fd8b58b58be47f2bae8819a&chksm=fadfa779cda82e6f9747c00d2f2ac763eb503f8d46b768c89a5c53a8bda6eb255deded727823&token=855879741&lang=zh_CN#rd)
+- [Jlink使用技巧之单独下载HEX文件到单片机](http://www.wangchaochao.top/2019/01/05/Jlink-Download-Hex/)
 
-- [elf格式转换为hex格式文件的两种方法](https://mp.weixin.qq.com/s?__biz=MzUzNzk2NTMxMw==&mid=2247483759&idx=1&sn=eb7ee69807d7c0091f95bc4a98f1ce71&chksm=fadfa701cda82e1748e5005f3726df66027170f82ea8cdfcae9e5f3207ced11d6ab02735a536#rd)
+- [百度智能手环方案开源(含源码，原理图，APP，通信协议等)](http://www.wangchaochao.top/2018/12/27/duband/)
 
-- [两个HC-05蓝牙模块互相绑定构成无线串口模块](https://mp.weixin.qq.com/s?__biz=MzUzNzk2NTMxMw==&mid=2247483709&idx=1&sn=2d5ab85d2cd48ee139d1af056a7019b6&chksm=fadfa753cda82e455883f0958515a139fcf7eb14b8e3da02bb30bf04d260ad6728ad3300c039#rd)
+- [elf格式转换为hex格式文件的两种方法](http://www.wangchaochao.top/2018/11/13/elf-to-hex/)
 
 ----
 
