@@ -74,7 +74,7 @@ ITM是ARM Cortex-M系列内核芯片中的一种全新的调试功能，可以�
 
 ![](https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/JLINK-UART3.jpg)
 
-### 5.打开Debug（printf）窗口
+### 6.打开Debug（printf）窗口
 
 进入Debug调试模式之后，调出Debug(printf)窗口，View - Serial Windows - Debug (printf) Viewer，如下图所示：
 
