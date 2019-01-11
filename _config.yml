@@ -99,20 +99,19 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 # Friends
 friends: [
     {
+        title: "我的公众号",
+        href: "https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/%E6%B1%82%E5%85%B3%E6%B3%A8.jpg"
+    },
+    {
+        title: "知乎专栏",
+        href: "https://zhuanlan.zhihu.com/mcu149"
+    },   
+    {
         title: "CSDN",
         href: "https://blog.csdn.net/whik1194"
     },
     {
         title: "博客园",
         href: "https://www.cnblogs.com/whik"
-    },
-    {
-        title: "我的公众号",
-        href: "https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/%E6%B1%82%E5%85%B3%E6%B3%A8.jpg"
-    },
-    {
-        title: "物联网|吴川斌的博客",
-        href: "http://www.mr-wu.cn/"
-    }    
-
+    }
 ]
