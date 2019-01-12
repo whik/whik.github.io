@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:     Jlink使用技巧之烧写SPI Flash存储
+title:     Jlink使用技巧之烧写SPI Flash存储芯片
 subtitle:	 Jlink系列教程
 date:       2019-01-12 19:30:40 +0800
 author:     Wang Chao
