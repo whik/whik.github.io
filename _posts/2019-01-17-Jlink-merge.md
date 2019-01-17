@@ -16,7 +16,7 @@ tag:
 
 IAP(In-application-programming)，即在应用中编程。当产品发布之后，可以通过网络方便的升级固件程序，而不需要拆机下载程序。IAP系统的固件一般由两部分组成，即BootLoader Code和Application Code，并存储在不同起始地址的空间里：
 
-![](https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/JLINK-MERGE%20(1).png)
+![](https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/JLINK-MERGE-1.png)
 
 系统运行时，先运行Bootloader程序，检测状态，判断是执行应用程序还是升级固件。在实际开发过程中，这两段程序一般是单独编写，然后生成两个Bin文件，为了方便下载程序，可以把两个文件合并为一个文件，这样会节省很多时间。本文将介绍如何使用JFlash来合并两个Bin文件或者两个Hex文件，
 
@@ -50,37 +50,31 @@ IAP(In-application-programming)，即在应用中编程。当产品发布之后�
 
 点击File -> Open data file，打开bootloader程序。
 
-![](https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/JLINK-MERGE%20(3).jpg)
+![](https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/JLINK-MERGE-3.jpg)
 
-![](https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/JLINK-MERGE%20(4).jpg)
-
-点击File -> Open data file，打开bootloader程序。
+![](https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/JLINK-MERGE-4.jpg)
 
 ### 5.打开要合并的程序文件2：app.hex
 
 点击File -> Merge data file，打开app程序。
 
-![](https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/JLINK-MERGE%20(5).jpg)
-
-![](https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/JLINK-MERGE%20(5).jpg)
+![](https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/JLINK-MERGE-6.jpg)
 
 要保证，bootloader程序起始地址+bootloader代码大小不超过app程序的起始地址，如下图示意：
 
-![](https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/JLINK-MERGE%20(2).png)
+![](https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/JLINK-MERGE-2.png)
 
 ### 6.保存合并后的文件
 
 点击File->Save data file as，将合并后的文件另存，可根据需要选择要保存的文件类型。
 
-![](https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/JLINK-MERGE%20(6).jpg)
-
-![](https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/JLINK-MERGE%20(8).jpg)
+![](https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/JLINK-MERGE-8.jpg)
 
 ### 注意
 
 如果要合并的文件为bin文件，自身不带地址信息，所以会让你指定地址，注意不要互相重叠地址。所以最好各种文件生成的时候就保存为带地址信息的格式，比如hex。关于Hex文件和Bin文件的区别，可以参考文章：[BIN、HEX、AXF、ELF文件格式有什么区别](https://mp.weixin.qq.com/s?__biz=MzUzNzk2NTMxMw==&mid=2247483671&idx=2&sn=e59ee5d6ea3098937bed342cd1c773e0&chksm=fadfa779cda82e6f72b5fbc52d7e6aeda25abf061763bb38655e13611301cde2a5f75dd72dbd#rd)
 
-![](https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/JLINK-MERGE%20(9).jpg)
+![](https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/JLINK-MERGE-9.jpg)
 
 ### JLink软件的下载
 
