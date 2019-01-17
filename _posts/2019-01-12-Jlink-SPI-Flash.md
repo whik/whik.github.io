@@ -158,7 +158,7 @@ JLink_Windows_V614b软件下载链接：[JLink_Windows_V614b.exe](https://wcc-bl
 
 Jlink使用技巧系列文章：
 
-- [Jlink使用技巧之烧写SPI Flash存储](http://www.wangchaochao.top/2019/01/05/Jlink-SPI-Flash/)
+- [Jlink使用技巧之烧写SPI Flash存储](http://www.wangchaochao.top/2019/01/12/Jlink-SPI-Flash/)
 
 - [Jlink使用技巧之虚拟串口功能](http://www.wangchaochao.top/2019/01/09/Jlink-UART/)
 
