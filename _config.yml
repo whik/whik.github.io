@@ -113,5 +113,9 @@ friends: [
     {
         title: "博客园",
         href: "https://www.cnblogs.com/whik"
+    },
+    {
+        title: "微录博客",
+        href: "http://www.blogtextbook.com/"
     }
 ]
