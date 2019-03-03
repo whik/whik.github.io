@@ -358,8 +358,3 @@ B2 | 蓝灯熄灭
 
 或微信扫码关注我的公众号
 
-![](https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/%E6%B1%82%E5%85%B3%E6%B3%A8.jpg)
-
-**如果觉得我的文章对你有所帮助，动动你的小手点个好看吧~**
-
-
