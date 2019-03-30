@@ -1,3 +1,4 @@
-PulseVersion: V1.1
-PulseUrl:https://wcc-blog.oss-cn-beijing.aliyuncs.com/QtUpdate/uFun_Pulse_v1.1.exe
+Pulse_Version:V1.1
+Pulse_Url:https://wcc-blog.oss-cn-beijing.aliyuncs.com/QtUpdate/uFun_Pulse_v1.1.exe
+Pulse_UpdateTime:20190330
 
