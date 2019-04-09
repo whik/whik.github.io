@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:    【uFUN开发板评测】基于uFUN开发板和扩展板的联网校准时钟
+title:    基于uFUN开发板和扩展板的联网校准时钟
 subtitle:	 uFUN开发板评测
 date:       2019-04-08 21:30:40 +0800
 author:     Wang Chao
@@ -214,8 +214,6 @@ PCB生产进度和SMT进度：
 
 --------
 
-欢迎大家关注我的[个人博客](http://www.wangchaochao.top)
+欢迎大家关注我的[个人博客](http://www.wangchaochao.top)：`www.wangchaochao.top`
 
 或微信扫码关注我的公众号
-
-![](https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/%E6%B1%82%E5%85%B3%E6%B3%A8.jpg)
