@@ -5,7 +5,7 @@
 www.wangchaochao.top
 </p>
 
-![](http://www.wangchaochao.top/img/blog_home.jpg)
+[![](http://www.wangchaochao.top/img/blog_home.jpg)](http://www.wangchaochao.top/)
 
 ### 关于我
 
