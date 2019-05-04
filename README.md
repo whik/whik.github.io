@@ -23,6 +23,7 @@ www.wangchaochao.top
 
 -----
 
+- [国产处理器的逆袭机会——RISC-V](http://www.wangchaochao.top/2019/04/27/ESBF/)
 - [Verilog实现产生任意占空比的PWM波](http://www.wangchaochao.top/2019/04/17/FPGA-1/)
 - [基于uFUN开发板和扩展板的联网校准时钟](http://www.wangchaochao.top/2019/04/08/uFun-Extend/)
 - [基于uFUN开发板的RGB调色板](http://www.wangchaochao.top/2019/04/06/uFun-7/)
