@@ -23,8 +23,14 @@ www.wangchaochao.top
 
 -----
 
+### 最新博文
+
+- [手把手教你制作Jlink-OB调试器（含原理图、PCB、外壳、固件）](http://www.wangchaochao.top/2019/05/10/Open-JlinkOB/)
 - [国产处理器的逆袭机会——RISC-V](http://www.wangchaochao.top/2019/04/27/ESBF/)
 - [Verilog实现产生任意占空比的PWM波](http://www.wangchaochao.top/2019/04/17/FPGA-1/)
+
+### 历史博文
+
 - [基于uFUN开发板和扩展板的联网校准时钟](http://www.wangchaochao.top/2019/04/08/uFun-Extend/)
 - [基于uFUN开发板的RGB调色板](http://www.wangchaochao.top/2019/04/06/uFun-7/)
 - [基于uFUN开发板的心率计（三）Qt上位机的实现](http://www.wangchaochao.top/2019/04/05/uFun-6/)
@@ -70,13 +76,11 @@ www.wangchaochao.top
 
 ### 我的公众号
 
-本博客不定期电子方面的技术文章和我个人的学习笔记，主要是单片机、电子电路、编程等方面，有错误的地方欢迎各位大佬多多指正，也希望能和大家一起交流学习、共同进步！另外我的公众号也会同步更新，我的公众号：mcu149
+本博客不定期电子方面的技术文章和我个人的学习笔记，主要是单片机、电子电路、编程等方面，有错误的地方欢迎各位大佬多多指正，也希望能和大家一起交流学习、共同进步！另外我的公众号也会同步更新，我的公众号：`mcu149`
 
 微信扫码关注
 
 ![](https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/%E6%B1%82%E5%85%B3%E6%B3%A8.jpg)
-
-
 
 ### 鸣谢
 
