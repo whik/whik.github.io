@@ -9,9 +9,11 @@ www.wangchaochao.top
 
 ### 关于我
 
-电子开发爱好者，我的微信号：wcc149
+电子开发爱好者，我的公众号：
 
-**调调板子，写写代码，生活还是这么美好。**
+![](https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/%E6%B1%82%E5%85%B3%E6%B3%A8.jpg)
+
+我的微信号：wcc149
 
 **最精彩的，其实就是世界本身。**
 
@@ -25,12 +27,13 @@ www.wangchaochao.top
 
 ### 最新博文
 
+- [织女星开发板启动模式修改——从ARM M4核启动](http://www.wangchaochao.top/2019/05/28/VEGA-2/)
 - [织女星开发板调试器升级为Jlink固件](http://www.wangchaochao.top/2019/05/26/VEGA-1/)
 - [Libero系列教程（一）介绍、下载、安装与注册](http://www.wangchaochao.top/2019/05/23/Libero-1/)
-- [NXP恩智浦VEGA织女星开发板免费申请！](https://www.wangchaochao.top/2019/05/22/Vega-Lite/)
 
 ### 历史博文
 
+- [NXP恩智浦VEGA织女星开发板免费申请！](https://www.wangchaochao.top/2019/05/22/Vega-Lite/)
 - [【ST开发板评测】Nucleo-F411RE开箱报告](http://www.wangchaochao.top/2019/05/17/Nucleo-F411RE/)
 - [手把手教你制作Jlink-OB调试器（含原理图、PCB、外壳、固件）](http://www.wangchaochao.top/2019/05/10/Open-JlinkOB/)
 - [国产处理器的逆袭机会——RISC-V](http://www.wangchaochao.top/2019/04/27/ESBF/)
