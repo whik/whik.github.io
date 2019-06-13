@@ -95,3 +95,63 @@ www.wangchaochao.top
 
 [Hux](https://huangxuan.me/)开发的博客模板
 
+
+
+----
+
+
+
+### Github开源svg图标库使用
+
+- 官网：[![shields](https://img.shields.io/badge/shields-%E5%AE%98%E7%BD%91-brightgreen.svg?style=plastic)](<https://shields.io/#/>)
+
+- 颜色图标
+
+|     图标类型     |            文字             |     颜色      |                             效果                             |
+| :--------------: | :-------------------------: | :-----------: | :----------------------------------------------------------: |
+|      Colors      |           深绿色            |  brightgreen  |  ![](https://img.shields.io/badge/-深绿色-brightgreen.svg)   |
+|      Colors      |            绿色             |     green     |      ![](https://img.shields.io/badge/-绿色-green.svg)       |
+|      Colors      |           黄绿色            |  yellowgreen  |  ![](https://img.shields.io/badge/-黄绿色-yellowgreen.svg)   |
+|      Colors      |            橙色             |    orange     |      ![](https://img.shields.io/badge/-橙色-orange.svg)      |
+|      Colors      |            红色             |      reg      |      ![](<https://img.shields.io/badge/-红色-red.svg>)       |
+|      Colors      |            蓝色             |     blue      |      ![](<https://img.shields.io/badge/-蓝色-blue.svg>)      |
+|      Colors      |           success           |    success    |    ![](https://img.shields.io/badge/-success-success.svg)    |
+|      Colors      |          important          |   important   |  ![](https://img.shields.io/badge/-important-important.svg)  |
+|      Colors      |          critical           |   critical    |   ![](https://img.shields.io/badge/-critical-critical.svg)   |
+|      Colors      |        informational        | informational | ![](https://img.shields.io/badge/-informational-informational.svg) |
+|      Colors      |          inactive           |   inactive    |   ![](https://img.shields.io/badge/-inactive-inactive.svg)   |
+|      Colors      |             9cf             |      9cf      |        ![](https://img.shields.io/badge/-9cf-9cf.svg)        |
+|      Colors      |           ff69b4            |    ff69b4     |     ![](https://img.shields.io/badge/-ff69b4-ff69b4.svg)     |
+
+- 矩形图标
+
+
+|     图标类型     |            文字             |    颜色     |                             效果                             |
+| :--------------: | :-------------------------: | :---------: | :----------------------------------------------------------: |
+|     Endpoint     | MyBlog-www.wangchaochao.top |   orange    | ![](https://img.shields.io/badge/MyBlog-www.wangchaochao.top-orange.svg) |
+|   瘦小圆角矩形   |       language-swift        | brightgreen | ![](https://img.shields.io/badge/language-swift-brightgreen.svg?style=plastic) |
+| 正常大小圆角矩形 |       language-swift        |    green    |  ![](https://img.shields.io/badge/language-swift-green.svg)  |
+|     正常矩形     |       language-swift        | yellowgreen | ![](https://img.shields.io/badge/language-swift-yellowgreen.svg?style=flat-square) |
+|     仓库星标     |        MyRepository         |   yellow    | ![](https://img.shields.io/badge/MyRepository-15+-yellow.svg?style=social) |
+|   带LOGO图标的   |           GitHub            |   yellow    | ![](https://img.shields.io/badge/GitHub-10k+-yellow.svg?style=social&logo=github) |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
