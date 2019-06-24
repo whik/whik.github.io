@@ -27,12 +27,13 @@ www.wangchaochao.top
 
 ### 最新博文
 
+- [QLineEdit限制数据类型——只能输入浮点型数](http://www.wangchaochao.top/2019/06/24/Qt-LineEdit-Float/)
 - [真正的RISC-V开发板——VEGA织女星开发板开箱评测](http://www.wangchaochao.top/2019/06/22/VEGA-4/)
 - [【ST开发板评测】使用Python来开发STM32F411](http://www.wangchaochao.top/2019/06/04/Nucleo-F411RE-2/)
-- [手把手教你搭建织女星开发板RISC-V开发环境](http://www.wangchaochao.top/2019/05/30/VEGA-3/)
 
 ### 历史博文
 
+- [手把手教你搭建织女星开发板RISC-V开发环境](http://www.wangchaochao.top/2019/05/30/VEGA-3/)
 - [织女星开发板启动模式修改——从ARM M4核启动](http://www.wangchaochao.top/2019/05/28/VEGA-2/)
 - [织女星开发板调试器升级为Jlink固件](http://www.wangchaochao.top/2019/05/26/VEGA-1/)
 - [Libero系列教程（一）介绍、下载、安装与注册](http://www.wangchaochao.top/2019/05/23/Libero-1/)

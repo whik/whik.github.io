@@ -38,7 +38,8 @@ setValidator函数的参数是QValidator，主要有3种：
 
 - **相关函数**
 
-  ```c++
+```c++
+
   //限制数据范围
   QIntValidator(int minimum, int maximum, QObject *parent = Q_NULLPTR)
   //获取最小值
@@ -51,19 +52,23 @@ setValidator函数的参数是QValidator，主要有3种：
   void setTop(int)
   //获取最大值
   int top() const
-  ```
 
-- **示例**：
+```
 
-    ```c++
-    //整型限制范围100-999
-    lineEdit->setValidator(new QIntValidator(100, 999, this));       
-    
-    //或者
-    QIntValidator* aIntValidator = new QIntValidator;
-    aIntValidator->setRange(100, 999);
-    ui->le_L1->setValidator(aIntValidator);
-    ```
+- **示例**
+
+
+```c++
+
+//整型限制范围100-999
+lineEdit->setValidator(new QIntValidator(100, 999, this));       
+
+//或者
+QIntValidator* aIntValidator = new QIntValidator;
+aIntValidator->setRange(100, 999);
+ui->le_L1->setValidator(aIntValidator);
+
+```
 
 ### QDoubleValidator Class
 
@@ -73,35 +78,40 @@ setValidator函数的参数是QValidator，主要有3种：
 
 - **相关函数**
 
-    ```c++
-    //限制数据范围
-    QDoubleValidator(double bottom, double top, int decimals, QObject *parent = Q_NULLPTR)
-    //设置小数点位数
-    void setDecimals(int)
-    //获取设置的小数点位数
-    int decimals() 
-    //设置数字表示方式，标准计数法还是科学计数法
-    void setNotation(Notation)
-    //获取设置的计数方式
-    Notation notation() 
-    //设置最小值
-    void setBottom(double)
-    //获取设置的最小值
-    double bottom() 
-    //设置最大值
-    void setTop(double)
-    //获取设置的最大值
-    double top() 
-    //设置数据范围，默认无小数位
-    void setRange(double minimum, double maximum, int decimals = 0)
-    
-    ```
+
+```c++
+
+//限制数据范围
+QDoubleValidator(double bottom, double top, int decimals, QObject *parent = Q_NULLPTR)
+//设置小数点位数
+void setDecimals(int)
+//获取设置的小数点位数
+int decimals() 
+//设置数字表示方式，标准计数法还是科学计数法
+void setNotation(Notation)
+//获取设置的计数方式
+Notation notation() 
+//设置最小值
+void setBottom(double)
+//获取设置的最小值
+double bottom() 
+//设置最大值
+void setTop(double)
+//获取设置的最大值
+double top() 
+//设置数据范围，默认无小数位
+void setRange(double minimum, double maximum, int decimals = 0)
+
+```
 
 - **示例**
 
+
 ```c++
+
 //限制范围0-680，小数点2位
 lineEdit->setValidator(**new** QDoubleValidator(0,680,2,**this**));
+
 ```
 
 *限制范围无效，这可能是Qt的一个Bug。*
@@ -114,22 +124,27 @@ lineEdit->setValidator(**new** QDoubleValidator(0,680,2,**this**));
 
 - **相关函数**
 
+
 ```c++
+
 //设置按正则表达式限制
 QRegExpValidator(const QRegExp &rx, QObject *parent = Q_NULLPTR)
 //获取设置的正则表达式
 QRegExp &regExp() 
 //设置正则表达式
 void setRegExp(const QRegExp &rx)
+
 ```
 
 - **示例**
 
 ```c++
+
 //限制-180，180，并限定小数点后4位
 QRegExp rx("^-?(180|1?[0-7]?\\d(\\.\\d{1,4})?)$");  
 QRegExpValidator *pReg = new QRegExpValidator(rx, this);  
 lineEdit->setValidator(pReg);  
+
 ```
 
 ### 关于正则表达式
@@ -138,7 +153,9 @@ lineEdit->setValidator(pReg);
 
 关于正则表达式的详细介绍：[正则表达式30分钟入门教程](http://deerchao.net/tutorials/regex/regex.htm)
 
+
 ```c++
+
 //正则表达式说明：
 /*
 
@@ -158,6 +175,7 @@ lineEdit->setValidator(pReg);
  "\d{1,4}"，里面的{1,4}表示重复1到4次；
 
 */
+
 ```
 
 
@@ -167,7 +185,9 @@ lineEdit->setValidator(pReg);
 
 - **定义MyDoubleValidator类**
 
+
 ```c++
+
 class MyDoubleValidator : public QDoubleValidator
 {
     Q_OBJECT
@@ -176,10 +196,13 @@ public:
     ~MyDoubleValidator();
     virtual QValidator::State validate(QString &input, int &pos) const;
 };
+
 ```
 - **函数实现**
 
+
 ```c++
+
 #include "MyDoubleValidator.h"
 
 MyDoubleValidator::MyDoubleValidator(QObject *parent)
@@ -217,17 +240,21 @@ QValidator:: State MyDoubleValidator::validate(QString & input, int & pos) const
 		return QValidator::Invalid;
 	return QValidator::Acceptable;
 }
+
 ```
 
 - **实际应用**
 
+
 ```c++
+
 {
 	MyDoubleValidator * dv = new  MyDoubleValidator(0);
 	dv->setNotation(QDoubleValidator::StandardNotation);
 	dv->setRange(2.0, 3.0, 2);
 	ui.lineEdit->setValidator(dv); 
 }
+
 ```
 
 
@@ -238,7 +265,9 @@ QValidator:: State MyDoubleValidator::validate(QString & input, int & pos) const
 
 - **函数实现**
 
+
 ```c++
+
 int Dialog::FloatCheck(QString float_str)
 {
     QByteArray ba = float_str.toLatin1();//QString 转换为 char*
@@ -270,35 +299,36 @@ int Dialog::FloatCheck(QString float_str)
     }
     return 1;
 }
+
 ```
+
 - **测试验证**
 
-```c++
-/*
-
-输入：
-    char *str1 = "1.2345";
-    char *str2 = "a.2345";
-    char *str3 = "0.2345";
-    char *str4 = "1a2345";
-    char *str5 = "a2345";
-    char *str6 = "1.2.2345";
-    char *str7 = "3.234.";
-    char *str8 = "3.234.a";
-
-输出：
-
-str1 : 1.2345 - 1
-str2 : a.2345 - 0
-str3 : 0.2345 - 1
-str4 : 1a2345 - 0
-str5 : a2345 - 0
-str6 : 1.2.2345 - 0
-str7 : 3.234. - 0
-str8 : 3.234.a - 0
-
-*/
-```
+	
+	/*
+	
+	输入：
+	    char *str1 = "1.2345";
+	    char *str2 = "a.2345";
+	    char *str3 = "0.2345";
+	    char *str4 = "1a2345";
+	    char *str5 = "a2345";
+	    char *str6 = "1.2.2345";
+	    char *str7 = "3.234.";
+	    char *str8 = "3.234.a";
+	
+	输出：
+	
+	str1 : 1.2345 - 1
+	str2 : a.2345 - 0
+	str3 : 0.2345 - 1
+	str4 : 1a2345 - 0
+	str5 : a2345 - 0
+	str6 : 1.2.2345 - 0
+	str7 : 3.234. - 0
+	str8 : 3.234.a - 0
+	
+	*/
 
 ### 历史精选
 
