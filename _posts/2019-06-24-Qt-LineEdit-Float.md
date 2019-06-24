@@ -38,37 +38,32 @@ setValidator函数的参数是QValidator，主要有3种：
 
 - **相关函数**
 
-```c++
 
-  //限制数据范围
-  QIntValidator(int minimum, int maximum, QObject *parent = Q_NULLPTR)
-  //获取最小值
-  int bottom() 
-  //设置最小值
-  void setBottom(int)
-  //设置数据范围
-  void setRange(int bottom, int top)
-  //设置最大值
-  void setTop(int)
-  //获取最大值
-  int top() const
+	  //限制数据范围
+	  QIntValidator(int minimum, int maximum, QObject *parent = Q_NULLPTR)
+	  //获取最小值
+	  int bottom() 
+	  //设置最小值
+	  void setBottom(int)
+	  //设置数据范围
+	  void setRange(int bottom, int top)
+	  //设置最大值
+	  void setTop(int)
+	  //获取最大值
+	  int top() const
 
-```
 
 - **示例**
 
 
-```c++
+	//整型限制范围100-999
+	lineEdit->setValidator(new QIntValidator(100, 999, this));       
+	
+	//或者
+	QIntValidator* aIntValidator = new QIntValidator;
+	aIntValidator->setRange(100, 999);
+	ui->le_L1->setValidator(aIntValidator);
 
-//整型限制范围100-999
-lineEdit->setValidator(new QIntValidator(100, 999, this));       
-
-//或者
-QIntValidator* aIntValidator = new QIntValidator;
-aIntValidator->setRange(100, 999);
-ui->le_L1->setValidator(aIntValidator);
-
-```
 
 ### QDoubleValidator Class
 
@@ -79,40 +74,34 @@ ui->le_L1->setValidator(aIntValidator);
 - **相关函数**
 
 
-```c++
+	//限制数据范围
+	QDoubleValidator(double bottom, double top, int decimals, QObject *parent = Q_NULLPTR)
+	//设置小数点位数
+	void setDecimals(int)
+	//获取设置的小数点位数
+	int decimals() 
+	//设置数字表示方式，标准计数法还是科学计数法
+	void setNotation(Notation)
+	//获取设置的计数方式
+	Notation notation() 
+	//设置最小值
+	void setBottom(double)
+	//获取设置的最小值
+	double bottom() 
+	//设置最大值
+	void setTop(double)
+	//获取设置的最大值
+	double top() 
+	//设置数据范围，默认无小数位
+	void setRange(double minimum, double maximum, int decimals = 0)
 
-//限制数据范围
-QDoubleValidator(double bottom, double top, int decimals, QObject *parent = Q_NULLPTR)
-//设置小数点位数
-void setDecimals(int)
-//获取设置的小数点位数
-int decimals() 
-//设置数字表示方式，标准计数法还是科学计数法
-void setNotation(Notation)
-//获取设置的计数方式
-Notation notation() 
-//设置最小值
-void setBottom(double)
-//获取设置的最小值
-double bottom() 
-//设置最大值
-void setTop(double)
-//获取设置的最大值
-double top() 
-//设置数据范围，默认无小数位
-void setRange(double minimum, double maximum, int decimals = 0)
-
-```
 
 - **示例**
 
+	
+	//限制范围0-680，小数点2位
+	lineEdit->setValidator(**new** QDoubleValidator(0,680,2,**this**));
 
-```c++
-
-//限制范围0-680，小数点2位
-lineEdit->setValidator(**new** QDoubleValidator(0,680,2,**this**));
-
-```
 
 *限制范围无效，这可能是Qt的一个Bug。*
 
@@ -125,27 +114,20 @@ lineEdit->setValidator(**new** QDoubleValidator(0,680,2,**this**));
 - **相关函数**
 
 
-```c++
-
-//设置按正则表达式限制
-QRegExpValidator(const QRegExp &rx, QObject *parent = Q_NULLPTR)
-//获取设置的正则表达式
-QRegExp &regExp() 
-//设置正则表达式
-void setRegExp(const QRegExp &rx)
-
-```
+	//设置按正则表达式限制
+	QRegExpValidator(const QRegExp &rx, QObject *parent = Q_NULLPTR)
+	//获取设置的正则表达式
+	QRegExp &regExp() 
+	//设置正则表达式
+	void setRegExp(const QRegExp &rx)
 
 - **示例**
 
-```c++
 
-//限制-180，180，并限定小数点后4位
-QRegExp rx("^-?(180|1?[0-7]?\\d(\\.\\d{1,4})?)$");  
-QRegExpValidator *pReg = new QRegExpValidator(rx, this);  
-lineEdit->setValidator(pReg);  
-
-```
+	//限制-180，180，并限定小数点后4位
+	QRegExp rx("^-?(180|1?[0-7]?\\d(\\.\\d{1,4})?)$");  
+	QRegExpValidator *pReg = new QRegExpValidator(rx, this);  
+	lineEdit->setValidator(pReg);  
 
 ### 关于正则表达式
 
@@ -153,30 +135,26 @@ lineEdit->setValidator(pReg);
 
 关于正则表达式的详细介绍：[正则表达式30分钟入门教程](http://deerchao.net/tutorials/regex/regex.htm)
 
-
-```c++
-
-//正则表达式说明：
-/*
-
-^(-?[0]|-?[1-9][0-9]{0,5})(?:\.\d{1,4})?$|(^\t?$)
-(^-?180$)|(^-?1[0-7]\d$)|(^-?[1-9]\d$)|(^-?[1-9]$)|^0$
-^-?(180|1?[0-7]?\d(\.\d+)?)$
-^-?(180|1?[0-7]?\d(\.\d{1,4})?)$
-^-?(90|[1-8]?\d(\.\d{1,4})?)$
-
- 式子中开头的^和结尾的$限定字符串的开始和结尾；
- "-?" 表示一个或0个负号，这里面的问号表示其前面的字符重复0次或1次；
- 管道符“|”表示平行分组，比如后三个，表示180或其它形式；
- [1-9] 表示限定数字范围为1到9，其余类似，如果是有限几个值，还可以用枚举的方式，比如限定-255到255时，第一个数字2的限定，应该表达为[1,2]，这表示这个位置只允许是1或者2；
- "\d"是一个转义字符，表示匹配一位数字；
- “\.” 表示匹配小数点；
- "\d+"，这里面的+表示其前面的\d重复一次或多次；
- "\d{1,4}"，里面的{1,4}表示重复1到4次；
-
-*/
-
-```
+	
+	//正则表达式说明：
+	/*
+	
+	^(-?[0]|-?[1-9][0-9]{0,5})(?:\.\d{1,4})?$|(^\t?$)
+	(^-?180$)|(^-?1[0-7]\d$)|(^-?[1-9]\d$)|(^-?[1-9]$)|^0$
+	^-?(180|1?[0-7]?\d(\.\d+)?)$
+	^-?(180|1?[0-7]?\d(\.\d{1,4})?)$
+	^-?(90|[1-8]?\d(\.\d{1,4})?)$
+	
+	 式子中开头的^和结尾的$限定字符串的开始和结尾；
+	 "-?" 表示一个或0个负号，这里面的问号表示其前面的字符重复0次或1次；
+	 管道符“|”表示平行分组，比如后三个，表示180或其它形式；
+	 [1-9] 表示限定数字范围为1到9，其余类似，如果是有限几个值，还可以用枚举的方式，比如限定-255到255时，第一个数字2的限定，应该表达为[1,2]，这表示这个位置只允许是1或者2；
+	 "\d"是一个转义字符，表示匹配一位数字；
+	 “\.” 表示匹配小数点；
+	 "\d+"，这里面的+表示其前面的\d重复一次或多次；
+	 "\d{1,4}"，里面的{1,4}表示重复1到4次；
+	
+	*/
 
 
 ### 关于QDoubleValidator的Bug解决
@@ -257,8 +235,6 @@ QValidator:: State MyDoubleValidator::validate(QString & input, int & pos) const
 
 ```
 
-
-
 ### 自定义函数的实现方式
 
 一开始，我并不知道可以通过setValidator函数来实现数据类型限制，我直接实现了一个检测输入的QString类型数据是否是Float数据，并没有指定小数后的位数，返回值为1表示是Float类型数据，否则不是。
@@ -304,18 +280,17 @@ int Dialog::FloatCheck(QString float_str)
 
 - **测试验证**
 
-	
-	/*
-	
+
 	输入：
-	    char *str1 = "1.2345";
-	    char *str2 = "a.2345";
-	    char *str3 = "0.2345";
-	    char *str4 = "1a2345";
-	    char *str5 = "a2345";
-	    char *str6 = "1.2.2345";
-	    char *str7 = "3.234.";
-	    char *str8 = "3.234.a";
+
+	char *str1 = "1.2345";
+	char *str2 = "a.2345";
+	char *str3 = "0.2345";
+	char *str4 = "1a2345";
+	char *str5 = "a2345";
+	char *str6 = "1.2.2345";
+	char *str7 = "3.234.";
+	char *str8 = "3.234.a";
 	
 	输出：
 	
@@ -327,8 +302,7 @@ int Dialog::FloatCheck(QString float_str)
 	str6 : 1.2.2345 - 0
 	str7 : 3.234. - 0
 	str8 : 3.234.a - 0
-	
-	*/
+
 
 ### 历史精选
 
