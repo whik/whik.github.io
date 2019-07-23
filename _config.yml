@@ -123,3 +123,5 @@ friends: [
         href: "http://www.blogtextbook.com/"
     }
 ]
+
+theme: jekyll-theme-cayman
