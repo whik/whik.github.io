@@ -30,9 +30,9 @@ tag:
 
 解析和构建JSON的示例程序，我都已经上传到代码托管平台上，示例工程基于CodeBlocks开发环境。
 
-Github仓库地址：[![](https://img.shields.io/badge/Github-cJSON_Demo-orange.svg)](https://github.com/whik/cJSON_Demo)
+Github仓库地址：https://github.com/whik/cJSON_Demo
 
-Gitee仓库地址：[![](https://img.shields.io/badge/Gitee-cJSON_Demo-orange.svg)](https://gitee.com/whik/cJSON_Demo)
+Gitee仓库地址：https://gitee.com/whik/cJSON_Demo
 
 或者通过下面的命令clone到本地：
 
