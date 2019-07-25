@@ -1,10 +1,10 @@
 # Site settings
 title: 王超的独立博客
-SEOTitle: 王超的独立博客 | WangChao Blog
+SEOTitle: 王超的独立博客-电子电路开发爱好者 单片机 嵌入式 Qt 物联网 智能硬件
 header-img: img/home-bg.jpg
 email: 1490789115@qq.com
 description: "王超的独立博客"
-keyword: "王超, 王超, 王超的博客, 王超的独立博客, Blog, 博客, 个人网站"
+keyword: "单片机, uFUN开发板, 嵌入式, 织女星开发板, VEGA, Qt, 物联网, 博客, 个人网站"
 url: "www.wangchaochao.top"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
