@@ -329,6 +329,6 @@ cJSON是一个基于C语言的JSON解析库，这个库非常简单，只有`cJS
 
 --------
 
-欢迎关注我的个人博客：[![](https://img.shields.io/badge/MyBlog-www.wangchaochao.top-orange.svg)](http://www.wangchaochao.top/)
+欢迎关注我的个人博客：www.wangchaochao.top
 
 或微信扫码关注我的公众号
