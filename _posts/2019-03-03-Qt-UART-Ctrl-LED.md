@@ -8,6 +8,7 @@ header-img: img/UART_Demo.jpg
 catalog:    true
 tag:
     - C语言
+    - Qt
 ---
 
 ![](https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/UART_Demo/qt.jpg)
