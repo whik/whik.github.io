@@ -44,11 +44,27 @@ ARM处理器按位数可分为32位和64位，按架构又可分为Cortex-A/Cort
 
 部分RISC-V Core
 
-![](https://pic4.zhimg.com/80/v2-d85074b928b00ed623223cdee98816d3_hd.jpg)
+|   RISC-V Core    |             Supplier              |                            Github                            | Bit  |              License               |
+| :--------------: | :-------------------------------: | :----------------------------------------------------------: | :--: | :--------------------------------: |
+|      RI5CY       | ETH Zurich, Università di Bologna |      [Github](https://github.com/pulp-platform/riscv/)       |  32  | Solderpad Hardware License v. 0.51 |
+|    Zero-riscy    | ETH Zurich, Università di Bologna |    [Github](https://github.com/pulp-platform/zero-riscy)     |  32  | Solderpad Hardware License v. 0.51 |
+| Hummingbird E200 |         Bob Hu（胡振波）          |    [Github](https://github.com/SI-RISCV/e200_opensource)     |  32  |             Apache 2.0             |
+| Riscy Processors |           MIT CSAIL CSG           |         [Github](https://github.com/csail-csg/riscy)         |  /   |                MIT                 |
+|    SweRV EH1     |          Western Digital          | [Github](https://github.com/westerndigitalcorporation/swerv_eh1) |  32  |             Apache 2.0             |
+|       K210       |       Kendryte（嘉楠耘智）        |            [Github](https://github.com/kendryte)             |  64  |                BSD                 |
+|     freedom      |              SiFive               |         [Github](https://github.com/sifive/freedom)          |  /   |                BSD                 |
 
 RISC-V SoC
 
-![](https://pic1.zhimg.com/80/v2-8300bca7fc8cc77923e64634bba67200_hd.jpg)
+| RISC-V SoC   | Supplier                | Core                                           | OS    | Bit  | Link                                                         |
+| ------------ | ----------------------- | ---------------------------------------------- | ----- | ---- | ------------------------------------------------------------ |
+| RV32M1       | NXP                     | RI5CY,Zero RI5CY,ARM Cortex-M4F,ARM Cortex-M0+ | RTOS  | 32   | [Datasheet](https://github.com/open-isa-org/open-isa.org/tree/master/Reference%20Manual%20and%20Data%20Sheet) |
+| FE310-G000   | SiFive                  | E31                                            | RTOS  | 32   | [Datasheet](https://static.dev.sifive.com/FE310-G000.pdf)                 |
+| FE310-G002   | SiFive                  | E31                                            | RTOS  | 32   | [Product Page](https://www.sifive.com/boards/hifive1)                        |
+| Freedom U540 | SiFive                  | U54, E51                                       | Linux | 64   | [Product Page](https://www.sifive.com/products/hifive-unleashed/)            |
+| GAP8         | GreenWaves Technologies | PULP / 1 + 8 RI5CY                             | RTOS  | 32   | [Product Page](https://greenwaves-technologies.com/en/gap8-product/)         |
+| K210         | Kendryte（嘉楠耘智）                | K210                                           | RTOS  | 32   | [Datasheet](https://s3.cn-north-1.amazonaws.com.cn/dl.kendryte.com/documents/kendryte_datasheet_20181011163248_en.pdf)                               |
+| RavenRV32    | efabless                | PicoRV32                                       | RTOS  | 32   | [Datasheet](https://ef.link/raven)                                        |
 
 基于FPGA实现的RISC-V开发板
 
