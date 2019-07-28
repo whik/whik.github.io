@@ -27,12 +27,13 @@ www.wangchaochao.top
 
 ### 最新博文
 
+- [玄铁910是个啥？是芯片吗？](http://www.wangchaochao.top/2019/07/28/XuanTie-Core/)
 - [Qt平台下使用QJson解析和构建JSON字符串](http://www.wangchaochao.top/2019/07/23/QJson-Demo/)
 - [使用cJSON库解析和构建JSON字符串](http://www.wangchaochao.top/2019/07/21/cJSON-Demo/)
-- [【2019北京国际消费电子博览会】参观总结](http://www.wangchaochao.top/2019/06/30/Beijing-CEE/)
 
 ### 历史博文
 
+- [【2019北京国际消费电子博览会】参观总结](http://www.wangchaochao.top/2019/06/30/Beijing-CEE/)
 - [织女星开发板RISC-V内核实现微秒级精确延时](http://www.wangchaochao.top/2019/06/28/VEGA-5)
 - [QLineEdit限制数据类型——只能输入浮点型数](http://www.wangchaochao.top/2019/06/24/Qt-LineEdit-Float/)
 - [真正的RISC-V开发板——VEGA织女星开发板开箱评测](http://www.wangchaochao.top/2019/06/22/VEGA-4/)

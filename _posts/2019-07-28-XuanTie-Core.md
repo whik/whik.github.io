@@ -11,7 +11,7 @@ tag:
     - RISC-V
 ---
 
-![](http://pics0.baidu.com/feed/f636afc379310a557d434b61e9946dac83261012.jpeg?token=04579b916adec942ecc3ce775b65fd99&s=121DA16C0558BDCC1C5E8C9E0300B09B)
+![](https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/%E7%8E%84%E9%93%81910/COREMARK.jpg)
 
 ### 1.平头哥首次交货
 
@@ -20,7 +20,7 @@ tag:
 
 玄铁910的研发绝对不是一蹴而就，其前身中天微自研开发的CK801、CK802、CK803、CK805、CK807、CK810、CK860等7款嵌入式CPU IP核，均已得到大规模量产的验证，授权客户超100家，被广泛应用于机器视觉、工业控制、车载终端、移动通信、多媒体、无线接入和信息安全等领域，主要客户均是一线芯片设计公司。2018年9月，中天微发布第一款基于RISC-V的IP核，CK902处理器，基于RISC-V第三代指令系统架构。可以说，玄铁910的发布和之前的积累是分不开的。
 
-![](https://media.bjnews.com.cn/cover/2019/07/25/4818521426573208294.jpg)
+![](https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/%E7%8E%84%E9%93%81910/PINGTOUGE.jpg)
 
 阿里巴巴作为RISC-V基金会的[铂金会员](https://riscv.org/membership/?action=viewlistings)，但是在RISC-V基金会官网上并没有看到CK902和玄铁910这两款IP核的相关信息：
 
@@ -67,7 +67,7 @@ RISC-V SoC
 
 玄铁910引人关注的原因，不仅是因为作为平头哥首次交货，而且更重要的是性能很强悍。应用领域主要是5G、自动驾驶、人工智能等高端领域。
 
-![](http://pics6.baidu.com/feed/0d338744ebf81a4cd378e47888fb4e5c242da60b.jpeg?token=8a9a9660262dd8e595a15847c99ca9b7&s=921DE16C03F0B7CA5C7E1C100300109B)
+![](https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/%E7%8E%84%E9%93%81910/CPU.jpg)
 
 但可以看得出，阿里巴巴之所以想把希望寄托给RISC-V，一方面是出于成本的考虑，另一方面则是受到华为事件的
 影响，期望更加自主可控。据发布会介绍，玄铁910支持16核，单核性能可达7.1 Coremark/MHz。但是，我并没有在Coremark官网上找到玄铁的跑分记录。
@@ -104,7 +104,7 @@ RISC-V，就被认为是AIoT时代芯片的基础。或许你有所了解，RISC
 
 这是平头哥半导体成立之后的第一款产品，阿里芯片宏图伟业的首次交货，也是RSIC-V开源世界的最新纪录。它以剑神兵器为名，性能和价格都展现大规模竞争力，但更令人惊讶的是背后承载的普惠方案、开源逻辑，以及阿里成功之道的延续.
 
-![](http://pics2.baidu.com/feed/adaf2edda3cc7cd9ffc47acd67d00f3ab90e910b.jpeg?token=90ec9d80fb15a662106e9db6fc24a1cf&s=BA7771848061FCE6DD0C58990300D088)
+![](https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/%E7%8E%84%E9%93%81910/ALI_CHIP.jpg)
 
 总之，RISC-V的发展，离不开完善的生态系统，IP核、芯片、IDE、开发板、文档资料、社区论坛等等。
 
