@@ -27,12 +27,13 @@ www.wangchaochao.top
 
 ### 最新博文
 
+- [详解串行通信协议及其FPGA实现](http://www.wangchaochao.top/2019/08/23/UART-Simple/)
 - [玄铁910是个啥？是芯片吗？](http://www.wangchaochao.top/2019/07/28/XuanTie-Core/)
 - [Qt平台下使用QJson解析和构建JSON字符串](http://www.wangchaochao.top/2019/07/23/QJson-Demo/)
-- [使用cJSON库解析和构建JSON字符串](http://www.wangchaochao.top/2019/07/21/cJSON-Demo/)
 
 ### 历史博文
 
+- [使用cJSON库解析和构建JSON字符串](http://www.wangchaochao.top/2019/07/21/cJSON-Demo/)
 - [【2019北京国际消费电子博览会】参观总结](http://www.wangchaochao.top/2019/06/30/Beijing-CEE/)
 - [织女星开发板RISC-V内核实现微秒级精确延时](http://www.wangchaochao.top/2019/06/28/VEGA-5)
 - [QLineEdit限制数据类型——只能输入浮点型数](http://www.wangchaochao.top/2019/06/24/Qt-LineEdit-Float/)
@@ -92,9 +93,9 @@ www.wangchaochao.top
 
 ### 我的公众号
 
-本博客不定期电子方面的技术文章和我个人的学习笔记，主要是单片机、电子电路、编程等方面，有错误的地方欢迎各位大佬多多指正，也希望能和大家一起交流学习、共同进步！另外我的公众号也会同步更新，我的公众号：`mcu149`
+本博客不定期电子方面的技术文章和我个人的学习笔记，主要是单片机、电子电路、编程等方面，有错误的地方欢迎各位大佬多多指正，也希望能和大家一起交流学习、共同进步！
 
-微信扫码关注
+另外我的公众号也会同步更新，我的公众号：`mcu149`，微信扫码关注
 
 ![](https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/%E6%B1%82%E5%85%B3%E6%B3%A8.jpg)
 
