@@ -34,9 +34,7 @@ tag:
 	Res = USART_ReceiveData(USART1);
 
 
-
 #### 51单片机的发送和接收
-
 
 
 	//51单片机发送1个字节
@@ -360,8 +358,6 @@ NRZI编码的全称为反向不归零编码，这种编码方式集成了前两�
 本程序中采用的中间值采样，即取16个时钟周期中的中间位作为当前的采样值。
 
 
-```
-
 	//Verilog实现串口协议接收，带错误指示，校验错误和停止位错误
 	
 	/*
@@ -520,8 +516,6 @@ NRZI编码的全称为反向不归零编码，这种编码方式集成了前两�
 
 	endmodule
 	
-
-```
 
 ![](https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/UART_Verilog/%E4%B8%B2%E5%8F%A3%E6%8E%A5%E6%94%B6%E4%BB%BF%E7%9C%9F%E6%B3%A2%E5%BD%A2.jpg)
 
