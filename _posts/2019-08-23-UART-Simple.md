@@ -24,8 +24,6 @@ tag:
 #### STM32的串口接收和发送
 
 
-```
-
 	//STM32发送1个字节
 	USART_SendData(USART1, 'A'); 
 	while (USART_GetFlagStatus(DEBUG_USARTx, USART_FLAG_TXE) == RESET);		
@@ -35,13 +33,11 @@ tag:
 	while (USART_GetFlagStatus(USART1, USART_FLAG_RXNE) == RESET);
 	Res = USART_ReceiveData(USART1);
 
-```
 
 
 #### 51单片机的发送和接收
 
 
-```
 
 	//51单片机发送1个字节
 	SBUF = 'A;
@@ -57,7 +53,6 @@ tag:
 	   RI = 0;
 	}
 
-```
 
 
 更方便一点的，通过重写C库fput函数和fgetc函数，还可以实现printf直接**重定向到串口**，用来输出一些调试信息再方便不过了。
@@ -241,7 +236,6 @@ NRZI编码的全称为反向不归零编码，这种编码方式集成了前两�
 #### 串口发送1个字节实现
 
 
-```
 
 	/*
 	串口协议发送：起始位 + 8位数据位 + 校验位 + 停止位 = 11位 * 16 = 176个时钟周期
@@ -354,7 +348,6 @@ NRZI编码的全称为反向不归零编码，这种编码方式集成了前两�
 	
 	endmodule
 
-```
 
 仿真波形
 
@@ -563,7 +556,3 @@ NRZI编码的全称为反向不归零编码，这种编码方式集成了前两�
 我的博客：[www.wangchaochao.top](www.wangchaochao.top)
 
 或微信扫码关注我的公众号
-
-![](https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/%E6%B1%82%E5%85%B3%E6%B3%A8.jpg)
-
-
