@@ -1,194 +1,367 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-       http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
->
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
 <url>
- <loc>http://www.wangchaochao.top</loc>
- <priority>0.5</priority>
- <lastmod>2019-05-29</lastmod>
- <changefreq>weekly</changefreq>
+  <loc>http://www.wangchaochao.top/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
- <loc>http://www.wangchaochao.top/</loc>
- <priority>0.5</priority>
- <lastmod>2019-05-29</lastmod>
- <changefreq>weekly</changefreq>
+  <loc>http://www.wangchaochao.top/abouts/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
- <loc>http://www.wangchaochao.top/</loc>
- <priority>0.5</priority>
- <lastmod>2019-05-29</lastmod>
- <changefreq>weekly</changefreq>
+  <loc>http://www.wangchaochao.top/tags/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
- <loc>http://www.wangchaochao.top/abouts/</loc>
- <priority>0.5</priority>
- <lastmod>2019-05-29</lastmod>
- <changefreq>weekly</changefreq>
+  <loc>http://www.wangchaochao.top/2019/08/25/TT-M3HQ-0/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
- <loc>http://www.wangchaochao.top/tags/</loc>
- <priority>0.5</priority>
- <lastmod>2019-05-29</lastmod>
- <changefreq>weekly</changefreq>
+  <loc>http://www.wangchaochao.top/2019/08/24/F407-25M-Down/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
- <loc>http://www.wangchaochao.top/2019/05/28/vega-2/</loc>
- <priority>0.5</priority>
- <lastmod>2019-05-29</lastmod>
- <changefreq>weekly</changefreq>
+  <loc>http://www.wangchaochao.top/2019/08/23/UART-Simple/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
- <loc>http://www.wangchaochao.top/2019/05/26/vega-1/</loc>
- <priority>0.5</priority>
- <lastmod>2019-05-29</lastmod>
- <changefreq>weekly</changefreq>
+  <loc>http://www.wangchaochao.top/2019/07/28/XuanTie-Core/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
- <loc>http://www.wangchaochao.top/2019/05/23/libero-1/</loc>
- <priority>0.5</priority>
- <lastmod>2019-05-29</lastmod>
- <changefreq>weekly</changefreq>
+  <loc>http://www.wangchaochao.top/2019/07/23/QJson-Demo/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
- <loc>http://www.wangchaochao.top/2019/05/22/vega-lite/</loc>
- <priority>0.5</priority>
- <lastmod>2019-05-29</lastmod>
- <changefreq>weekly</changefreq>
+  <loc>http://www.wangchaochao.top/2019/07/21/cJSON-Demo/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
- <loc>http://www.wangchaochao.top/2019/05/17/nucleo-f411re/</loc>
- <priority>0.5</priority>
- <lastmod>2019-05-29</lastmod>
- <changefreq>weekly</changefreq>
+  <loc>http://www.wangchaochao.top/2019/06/30/Beijing-CEE/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
- <loc>http://www.wangchaochao.top/2019/05/10/open-jlinkob/</loc>
- <priority>0.5</priority>
- <lastmod>2019-05-29</lastmod>
- <changefreq>weekly</changefreq>
+  <loc>http://www.wangchaochao.top/2019/06/28/VEGA-5/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
- <loc>http://www.wangchaochao.top/2019/04/27/esbf/</loc>
- <priority>0.5</priority>
- <lastmod>2019-05-29</lastmod>
- <changefreq>weekly</changefreq>
+  <loc>http://www.wangchaochao.top/2019/06/24/Qt-LineEdit-Float/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
- <loc>http://www.wangchaochao.top/2019/04/17/fpga-1/</loc>
- <priority>0.5</priority>
- <lastmod>2019-05-29</lastmod>
- <changefreq>weekly</changefreq>
+  <loc>http://www.wangchaochao.top/2019/06/22/VEGA-4/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
- <loc>http://www.wangchaochao.top/2019/04/08/ufun-extend/</loc>
- <priority>0.5</priority>
- <lastmod>2019-05-29</lastmod>
- <changefreq>weekly</changefreq>
+  <loc>http://www.wangchaochao.top/page2/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
- <loc>http://www.wangchaochao.top/2019/04/06/ufun-7/</loc>
- <priority>0.5</priority>
- <lastmod>2019-05-29</lastmod>
- <changefreq>weekly</changefreq>
+  <loc>http://www.wangchaochao.top/2018/03/10/Git-use-skill/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
- <loc>http://www.wangchaochao.top/page2</loc>
- <priority>0.5</priority>
- <lastmod>2019-05-29</lastmod>
- <changefreq>weekly</changefreq>
+  <loc>http://www.wangchaochao.top/2018/10/02/Markdown-UserGuide/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
- <loc>http://www.wangchaochao.top/tags/</loc>
- <priority>0.5</priority>
- <lastmod>2019-05-29</lastmod>
- <changefreq>weekly</changefreq>
+  <loc>http://www.wangchaochao.top/2018/05/06/about-0-ohm-resistor/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
- <loc>http://www.wangchaochao.top/about/</loc>
- <priority>0.5</priority>
- <lastmod>2019-05-29</lastmod>
- <changefreq>weekly</changefreq>
+  <loc>http://www.wangchaochao.top/2018/10/15/Busuanzi/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
- <loc>https://www.zhihu.com/people/wangchao149</loc>
- <priority>0.5</priority>
- <lastmod>2019-05-29</lastmod>
- <changefreq>weekly</changefreq>
+  <loc>http://www.wangchaochao.top/2018/10/01/Blog-Add-Music/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
- <loc>http://weibo.com/wangchao149</loc>
- <priority>0.5</priority>
- <lastmod>2019-05-29</lastmod>
- <changefreq>weekly</changefreq>
+  <loc>http://www.wangchaochao.top/2019/03/31/Qt-Update/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
- <loc>https://github.com/whik</loc>
- <priority>0.5</priority>
- <lastmod>2019-05-29</lastmod>
- <changefreq>weekly</changefreq>
+  <loc>http://www.wangchaochao.top/2019/03/03/Qt-UART-Ctrl-LED/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
- <loc>https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/%e6%b1%82%e5%85%b3%e6%b3%a8.jpg</loc>
- <priority>0.5</priority>
- <lastmod>2019-05-29</lastmod>
- <changefreq>weekly</changefreq>
+  <loc>http://www.wangchaochao.top/2019/02/27/C-union/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
- <loc>https://zhuanlan.zhihu.com/mcu149</loc>
- <priority>0.5</priority>
- <lastmod>2019-05-29</lastmod>
- <changefreq>weekly</changefreq>
+  <loc>http://www.wangchaochao.top/2019/02/20/C-enum/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
- <loc>https://blog.csdn.net/whik1194</loc>
- <priority>0.5</priority>
- <lastmod>2019-05-29</lastmod>
- <changefreq>weekly</changefreq>
+  <loc>http://www.wangchaochao.top/2019/02/19/C-struct/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
- <loc>https://www.cnblogs.com/whik</loc>
- <priority>0.5</priority>
- <lastmod>2019-05-29</lastmod>
- <changefreq>weekly</changefreq>
+  <loc>http://www.wangchaochao.top/2019/02/12/From-C-to-Cpp/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
- <loc>http://www.blogtextbook.com/</loc>
- <priority>0.5</priority>
- <lastmod>2019-05-29</lastmod>
- <changefreq>weekly</changefreq>
+  <loc>http://www.wangchaochao.top/2019/01/23/Keil-Astyle/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
- <loc>https://www.zhihu.com/people/wangchao149</loc>
- <priority>0.5</priority>
- <lastmod>2019-05-29</lastmod>
- <changefreq>weekly</changefreq>
+  <loc>http://www.wangchaochao.top/2019/01/21/C-String/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
- <loc>http://weibo.com/wangchao149</loc>
- <priority>0.5</priority>
- <lastmod>2019-05-29</lastmod>
- <changefreq>weekly</changefreq>
+  <loc>http://www.wangchaochao.top/2018/12/04/Parse-JSON/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
- <loc>https://github.com/whik</loc>
- <priority>0.5</priority>
- <lastmod>2019-05-29</lastmod>
- <changefreq>weekly</changefreq>
+  <loc>http://www.wangchaochao.top/2018/11/18/cJSON/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
- <loc>http://www.wangchaochao.top</loc>
- <priority>0.5</priority>
- <lastmod>2019-05-29</lastmod>
- <changefreq>weekly</changefreq>
+  <loc>http://www.wangchaochao.top/2018/10/01/DeleteHexFileLine1-Code/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
- <loc>http://huangxuan.me</loc>
- <priority>0.5</priority>
- <lastmod>2019-05-29</lastmod>
- <changefreq>weekly</changefreq>
+  <loc>http://www.wangchaochao.top/2018/10/01/HexToBinStr_Code/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
+<url>
+  <loc>http://www.wangchaochao.top/2019/03/09/uFun-0/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.wangchaochao.top/2019/01/17/Jlink-series/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.wangchaochao.top/2019/01/17/Jlink-merge/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.wangchaochao.top/2019/01/12/Jlink-SPI-Flash/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.wangchaochao.top/2019/01/09/Jlink-UART/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.wangchaochao.top/2019/01/06/Jlink-ReadBack-Hex/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.wangchaochao.top/2019/01/05/Jlink-Download-Hex/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.wangchaochao.top/2019/01/04/Keil-Download-Hex/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.wangchaochao.top/2018/11/13/elf-to-hex/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.wangchaochao.top/2018/10/17/JScope/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.wangchaochao.top/2018/10/14/KeilCreateBinFile/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.wangchaochao.top/2019/05/10/Open-JlinkOB/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.wangchaochao.top/2019/04/08/uFun-Extend/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.wangchaochao.top/2019/04/06/uFun-7/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.wangchaochao.top/2019/04/05/uFun-6/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.wangchaochao.top/2019/03/31/uFun-5/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.wangchaochao.top/2019/03/23/uFun-3/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.wangchaochao.top/2019/03/20/uFun-4/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.wangchaochao.top/2019/03/17/uFun-2/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.wangchaochao.top/2019/05/28/VEGA-2/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.wangchaochao.top/2019/05/26/VEGA-1/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.wangchaochao.top/2018/10/28/BluetoothUART/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.wangchaochao.top/2018/11/07/OpenSource/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.wangchaochao.top/2018/11/07/BatCmd/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.wangchaochao.top/2018/12/09/CPP-1/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.wangchaochao.top/2018/12/27/duband/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.wangchaochao.top/2019/06/04/Nucleo-F411RE-2/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.wangchaochao.top/2019/05/17/Nucleo-F411RE/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.wangchaochao.top/2019/03/09/uFun-1/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.wangchaochao.top/2019/05/23/Libero-1/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.wangchaochao.top/2019/04/17/FPGA-1/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.wangchaochao.top/2019/05/30/VEGA-3/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.wangchaochao.top/2019/04/27/ESBF/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.wangchaochao.top/2019/05/22/Vega-Lite/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.wangchaochao.top/page3/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.wangchaochao.top/2018/03/14/Stephen-Hawking-dies/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.wangchaochao.top/page4/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.wangchaochao.top/page5/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.wangchaochao.top/page6/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://www.wangchaochao.top/page7/</loc>
+  <lastmod>2019-08-25T11:36:41+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+
+
 </urlset>
