@@ -27,12 +27,13 @@ www.wangchaochao.top
 
 ### 最新博文
 
+- [东芝MCU实现位带操作](http://www.wangchaochao.top/2019/09/08/TT-M3HQ-2/)
 - [使用系统定时器SysTick实现精确延时微秒和毫秒函数](http://www.wangchaochao.top/2019/09/08/TT-M3HQ-1/)
 - [东芝半导体最新ARM开发板——TT_M3HQ开箱评测](http://www.wangchaochao.top/2019/08/25/TT-M3HQ-0/)
-- [STM32F407外部晶体改为25M后检测不到芯片的解决办法](http://www.wangchaochao.top/2019/08/24/F407-25M-Down/)
 
 ### 历史博文
 
+- [STM32F407外部晶体改为25M后检测不到芯片的解决办法](http://www.wangchaochao.top/2019/08/24/F407-25M-Down/)
 - [详解串行通信协议及其FPGA实现](http://www.wangchaochao.top/2019/08/23/UART-Simple/)
 - [玄铁910是个啥？是芯片吗？](http://www.wangchaochao.top/2019/07/28/XuanTie-Core/)
 - [Qt平台下使用QJson解析和构建JSON字符串](http://www.wangchaochao.top/2019/07/23/QJson-Demo/)
