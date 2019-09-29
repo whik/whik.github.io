@@ -27,12 +27,13 @@ www.wangchaochao.top
 
 ### 最新博文
 
+- [Microsemi Libero系列教程（二）——新建点灯工程](http://www.wangchaochao.top/2019/09/29/Libero-2/)
 - [东芝开发板驱动OLED模块显示LOGO图片](http://www.wangchaochao.top/2019/09/15/TT-M3HQ-3/)
 - [东芝MCU实现位带操作](http://www.wangchaochao.top/2019/09/08/TT-M3HQ-2/)
-- [使用系统定时器SysTick实现精确延时微秒和毫秒函数](http://www.wangchaochao.top/2019/09/08/TT-M3HQ-1/)
 
 ### 历史博文
 
+- [使用系统定时器SysTick实现精确延时微秒和毫秒函数](http://www.wangchaochao.top/2019/09/08/TT-M3HQ-1/)
 - [东芝半导体最新ARM开发板——TT_M3HQ开箱评测](http://www.wangchaochao.top/2019/08/25/TT-M3HQ-0/)
 - [STM32F407外部晶体改为25M后检测不到芯片的解决办法](http://www.wangchaochao.top/2019/08/24/F407-25M-Down/)
 - [详解串行通信协议及其FPGA实现](http://www.wangchaochao.top/2019/08/23/UART-Simple/)
@@ -47,7 +48,7 @@ www.wangchaochao.top
 - [手把手教你搭建织女星开发板RISC-V开发环境](http://www.wangchaochao.top/2019/05/30/VEGA-3/)
 - [织女星开发板启动模式修改——从ARM M4核启动](http://www.wangchaochao.top/2019/05/28/VEGA-2/)
 - [织女星开发板调试器升级为Jlink固件](http://www.wangchaochao.top/2019/05/26/VEGA-1/)
-- [Libero系列教程（一）介绍、下载、安装与注册](http://www.wangchaochao.top/2019/05/23/Libero-1/)
+- [Microsemi Libero系列教程（一）——Libero开发环境介绍、下载、安装与注册](http://www.wangchaochao.top/2019/05/23/Libero-1/)
 - [NXP恩智浦VEGA织女星开发板免费申请！](https://www.wangchaochao.top/2019/05/22/Vega-Lite/)
 - [【ST开发板评测】Nucleo-F411RE开箱报告](http://www.wangchaochao.top/2019/05/17/Nucleo-F411RE/)
 - [手把手教你制作Jlink-OB调试器（含原理图、PCB、外壳、固件）](http://www.wangchaochao.top/2019/05/10/Open-JlinkOB/)
