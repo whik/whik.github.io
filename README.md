@@ -27,12 +27,13 @@ www.wangchaochao.top
 
 ### 最新博文
 
+- [Microsemi Libero使用技巧——使用命令行模式下载程序](http://www.wangchaochao.top/2019/10/09/Libero-Skill-4/)
 - [Microsemi Libero使用技巧——使用FlashPro单独下载程序](http://www.wangchaochao.top/2019/10/01/Libero-Skil-3/)
 - [Microsemi Libero使用技巧——使用第三方编辑器Notepad++](http://www.wangchaochao.top/2019/09/30/Libero-Skil-2/)
-- [Microsemi Libero使用技巧——查看芯片资源占用情况](http://www.wangchaochao.top/2019/09/30/Libero-Skil-1/)
 
 ### 历史博文
 
+- [Microsemi Libero使用技巧——查看芯片资源占用情况](http://www.wangchaochao.top/2019/09/30/Libero-Skil-1/)
 - [Microsemi Libero系列教程（二）——新建点灯工程](http://www.wangchaochao.top/2019/09/29/Libero-2/)
 - [东芝开发板驱动OLED模块显示LOGO图片](http://www.wangchaochao.top/2019/09/15/TT-M3HQ-3/)
 - [东芝MCU实现位带操作](http://www.wangchaochao.top/2019/09/08/TT-M3HQ-2/)
