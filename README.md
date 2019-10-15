@@ -27,12 +27,14 @@ www.wangchaochao.top
 
 ### 最新博文
 
+- [千呼万唤始出来——uFUN开发板2.0开箱评测](http://www.wangchaochao.top/2019/10/15/uFUN2-0/)
+- [Microsemi Libero使用技巧——使用FlashPro生成stp程序文件](http://www.wangchaochao.top/2019/10/14/Libero-Skill-5/)
 - [Microsemi Libero使用技巧——使用命令行模式下载程序](http://www.wangchaochao.top/2019/10/09/Libero-Skill-4/)
-- [Microsemi Libero使用技巧——使用FlashPro单独下载程序](http://www.wangchaochao.top/2019/10/01/Libero-Skil-3/)
-- [Microsemi Libero使用技巧——使用第三方编辑器Notepad++](http://www.wangchaochao.top/2019/09/30/Libero-Skil-2/)
 
 ### 历史博文
 
+- [Microsemi Libero使用技巧——使用FlashPro单独下载程序](http://www.wangchaochao.top/2019/10/01/Libero-Skil-3/)
+- [Microsemi Libero使用技巧——使用第三方编辑器Notepad++](http://www.wangchaochao.top/2019/09/30/Libero-Skil-2/)
 - [Microsemi Libero使用技巧——查看芯片资源占用情况](http://www.wangchaochao.top/2019/09/30/Libero-Skil-1/)
 - [Microsemi Libero系列教程（二）——新建点灯工程](http://www.wangchaochao.top/2019/09/29/Libero-2/)
 - [东芝开发板驱动OLED模块显示LOGO图片](http://www.wangchaochao.top/2019/09/15/TT-M3HQ-3/)
