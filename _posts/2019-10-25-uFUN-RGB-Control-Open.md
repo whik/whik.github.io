@@ -15,14 +15,14 @@ tag:
 
 uFUN开发板1.0版本评测时，基于Qt写了个小上位机，可以通过串口来控制板子上的RGB灯，通过控制，可以混合出任意的颜色，今天整理了一下，开源这个**Qt上位机**和**STM32代码**。
 
-![](https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/uFUN2_0/%E9%BB%84%E8%93%9D%E4%B8%A4%E7%A7%8D.jpeg)
+![](https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/uFUN2_0/%E7%BB%86%E8%8A%821.jpeg)
 
 ### 项目介绍
 
 基于uFUN开发板，实现通过Qt上位机控制uFUN开发板RGB灯亮度，主要包括STM32下位机程序和Qt上位机程序。
 
-- Gitee项目地址：https://gitee.com/whik/uFUN_RGB_Control
-- Github项目地址：https://github.com/whik/uFUN_RGB_Control
+- Gitee项目地址：[https://gitee.com/whik/uFUN_RGB_Control](https://gitee.com/whik/uFUN_RGB_Control)
+- Github项目地址：[https://github.com/whik/uFUN_RGB_Control](https://github.com/whik/uFUN_RGB_Control)
 - 直接下载：[uFUN_RGB_Control.rar](https://wcc-blog.oss-cn-beijing.aliyuncs.com/BlogFile/uFUN_RGB_Control.rar)
 
 本项目基于uFUN 2.0版本开发，上位机使用Qt开发，下位机使用Keil MDK开发。
