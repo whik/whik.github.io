@@ -94,11 +94,11 @@ tag:
 
 ### 配套源码
 
-本书配套的Verilog代码Github开源地址：https://github.com/whik/e200_opensource.git`
+本书配套的Verilog代码Github开源地址：`https://github.com/whik/e200_opensource.git`
 
 - Git下载命令：`git clone https://github.com/whik/e200_opensource.git`
 
-如果下载速度太慢，我已经把这个仓库同步到了我个人的Gitee码云上，下载速度会快一些：https://github.com/whik/e200_opensource
+如果下载速度太慢，我已经把这个仓库同步到了我个人的Gitee码云上，下载速度会快一些：`https://github.com/whik/e200_opensource
 
 - Git下载命令：`git clone https://github.com/whik/e200_opensource.git`
 
