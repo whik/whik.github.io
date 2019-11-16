@@ -2,7 +2,7 @@
 layout:     post
 title:    手把手教你DIY尼康ML-L3红外遥控器
 subtitle:	DIY项目
-date:       2019-10-16 17:22:40 +0800
+date:       2019-11-16 17:22:40 +0800
 author:     Wang Chao
 header-img: img/img.jpg
 catalog:    true
@@ -411,8 +411,8 @@ endmodule
 
 以上代码已经开源在Github和Gitee平台，地址如下。
 
-- Github开源地址: https://github.com/whik/nikon-wireless-remote-control-ML-L3-DIY.git
-- Gitee开源地址 : https://gitee.com/whik/nikon-wireless-remote-control-ML-L3-DIY.git
+- Github开源地址: `https://github.com/whik/nikon-wireless-remote-control-ML-L3-DIY.git`
+- Gitee开源地址 : `https://gitee.com/whik/nikon-wireless-remote-control-ML-L3-DIY.git`
 
 没有使用代码托管平台的朋友，可以在公众号后台回复【**尼康遥控器**】也可以获取代码。
 
