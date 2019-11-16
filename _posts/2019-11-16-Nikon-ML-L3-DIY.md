@@ -430,7 +430,6 @@ endmodule
 - [Jlink使用技巧系列教程索引](http://www.wangchaochao.top/2019/01/17/Jlink-series/) 
 - [手把手教你制作Jlink-OB调试器（含原理图、PCB、外壳、固件）](http://www.wangchaochao.top/2019/05/10/Open-JlinkOB/) 
 - [两行代码搞定博客访问量统计](http://www.wangchaochao.top/2018/10/15/Busuanzi/) 
-- [详解串行通信协议及其FPGA实现](http://www.wangchaochao.top/2019/08/23/UART-Simple/)
 
 ----
 
