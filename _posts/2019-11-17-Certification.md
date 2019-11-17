@@ -17,7 +17,7 @@ tag:
 
 ![](https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/Certification/pcb1.jpeg)
 
-- **NXP开发板上的RoHS标志、BM标志**
+- **NXP开发板上的RoHS标志、RU标志**
 
 ![](https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/Certification/pcb2.jpeg)
 
@@ -29,7 +29,7 @@ tag:
 
 ![](https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/Certification/pcb4.jpeg)
 
-- **东芝开发板上的RU标志、BM标志**
+- **东芝开发板上的RU标志**
 
 ![](https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/Certification/pcb5.jpeg)
 
@@ -45,6 +45,7 @@ tag:
 
 ### 标志
 
+
 - **防静电标志**
 
 防静电标志（标识）是防静电控制体系中不可缺少的一环，这些标志（标识）鲜明又形象地指示出与静电有关的产品、区域或包装等，提示工作人员时刻不忘静电的危害性，做好防范工作。可粘贴在车间所用的器材、产品的外包装、设备外壳或需防静电的场所中。 
@@ -58,6 +59,7 @@ tag:
 ![](https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/Certification/weee.jpg)
 
 ### 国内认证
+
 
 - **CCC认证：China Compulsory Certification，中国强制性产品认证。**
 
@@ -77,8 +79,8 @@ SRRC是国家无线电管理委员会强制认证要求，自 1999 年 6 月 1 �
 
 ![](https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/Certification/srrc.jpg)
 
-
 ### 全球认证
+
 
 - **CB认证：国际电工CB认证。**
 
@@ -87,6 +89,7 @@ SRRC是国家无线电管理委员会强制认证要求，自 1999 年 6 月 1 �
 ![](https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/Certification/CB.jpg)
 
 ### 北美认证
+
 
 - **UL认证： UL是美国保险商试验所（Underwriter Laboratories Inc.）的简写，是制造厂商最值得信赖的合格评估提供者之一 。**
 
@@ -132,6 +135,7 @@ IC认证的标准与FCC基本一致，IC目前只在电磁干扰上做限制。�
 
 ### 欧盟认证
 
+
 - **CE认证： CE认证制度是欧盟电器产品的准入制度，是强制性法律条文的要求。** 
 
 CE认证是欧盟国家实行的强制性产品安全认证制度，目的是为了保障欧盟国家人民的生命财产安全，所以一般针对的都是老百姓日常接触的到的具有一定危险性的产品，比如大部分带电的产品都有触电危险，所以都要做CE认证。这也是国际通行的做法，比如我国也有自己的强制性产品认证制度CCC认证，日本有PSE认证，澳洲有SAA认证，都是为了保障本国人民的生命财产安全。
@@ -174,6 +178,7 @@ RoHS 2.0 十项有害物质限制要求：
 
 ### 韩国认证
 
+
 - **KC认证：KC Mark Certification Products List(KC认证产品目录) 根据《韩国电气用品安全管理法》规定，自2009年1月1日起电气用品安全认证分为强制性认证及自律（自愿）性认证两种。**
 
 与以上认证类型不同，KC认证是对制造商即工厂进行的认证，企业如果需要申请KC标志，首先必须向韩国电气电子检测研究院（Korea Electrical Testing Institute，KETI）或韩国产业技术检测院（Korea Testing Laboratory，KTL）提出申请。若一种产品由几个独立的工厂生产时，尽管产品是同一型号，几个工厂都应同时取得认证标志。海外生产厂家可以直接申请或者授权韩国当地的代理机构和代表厂家申请。 
@@ -181,6 +186,7 @@ RoHS 2.0 十项有害物质限制要求：
 ![](https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/Certification/kc.jpg)
 
 ### 日本认证
+
 
 - **PSE认证： PSE是由2001年开始实施的“电器设备和材料安全法”的要求，针对大多数的家用或者商用电气设备。** 
 
@@ -203,6 +209,7 @@ PSE认证是日本电气用品的强制性市场准入制度（在日本称之�
 
 ### 澳大利亚认证
 
+
 - **SAA认证： SAA也是进入澳大利亚市场的电器产品须符合的当地安全法规，即业界经常面对的认证。**
 
 澳大利亚的标准机构为澳大利亚标准协会SAA， 后来又改名为澳大利亚标准有限公司。由于澳大利亚和新西兰两国的互认协议，所有取得澳大利亚认证的产品均可顺利地进入新西兰市场销售。所有电器产品均要做安全认证（ SAA ）。SAA Approvals Pty Ltd是澳大利亚和新西兰联合认证系统 (JAS-ANZ)认可的发证机构，可为声明的和非声明的已符合澳大利亚电气设备标准安全要求的电器设备发行批准证书。
@@ -210,6 +217,7 @@ PSE认证是日本电气用品的强制性市场准入制度（在日本称之�
 ![](https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/Certification/saa.jpg)
 
 ### 蓝牙和WiFi认证
+
 
 如果您的产品具有蓝牙功能并且在产品外观上标明蓝牙标志，必须通过一个叫做BQB（Bluetooth Qualification Body）的认证。蓝牙认证是很重要。只有通过蓝牙SIG组织认证的产品才是真正的蓝牙产品，才能保证产品的兼容性和相关性能是符合蓝牙标准的，才能合法使用蓝牙或BLUETOOTH的LOGO以及相关蓝牙技术规范。
 
@@ -224,6 +232,7 @@ Wi-Fi认证针对的是基于IEEE 802.11b标准的无线局域网产品，Wi-Fi�
 ![](https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/Certification/esp32.jpg)
 
 ### 其他国家认证
+
 
 - **印尼POSTEL认证 ( POSTEL of Indonesia)**： 所有进口到印尼的通讯产品，必须通过印尼 邮政电信总局(DGPT)的型式认证以及海关检验。
 - **马来西亚SIRIM认证 (SIRIM certification of Malaysia)**： 马来西亚实行的产品认证体系分为强制认证和自愿认证两种。通信设备和《电气设备批准条例》中规定的31大类的电气产品须分别进行强制性的型式认证和安全认证，其他产品属于自愿认证范畴。
