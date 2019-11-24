@@ -1,7 +1,7 @@
 ---
 
 layout:     post
-title:   详解EMC测试国家标准17626
+title:   详解EMC测试国家标准GB/T 17626
 subtitle:	 EMC测试国标
 date:       2019-11-24 13:47:40 +0800
 author:     Wang Chao
@@ -306,7 +306,7 @@ https://www.mianbaoban.cn/evaluating/product-23.html
 
 ### 推荐阅读
 
-- [详解电子产品认证类型]()
+- [电路板上的这些标志你都知道是什么含义吗？](http://www.wangchaochao.top/2019/11/17/Certification/)
 - [手把手教你DIY尼康ML-L3红外遥控器](http://www.wangchaochao.top/2019/11/16/Nikon-ML-L3-DIY/) 
 - [《手把手教你设计CPU——RISC-V处理器》读书笔记](http://www.wangchaochao.top/2019/11/03/RISC-V-CPU-DIY-Read-Note/) 
 - [基于uFUN开发板的RGB调色器——STM32程序和Qt上位机全开源](http://www.wangchaochao.top/2019/10/25/uFUN-RGB-Control-Open/) 
