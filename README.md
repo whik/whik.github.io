@@ -27,12 +27,14 @@ www.wangchaochao.top
 
 ### 最新博文
 
+- [全平台轻量开源verilog仿真工具iverilog+GTKWave使用教程](http://www.wangchaochao.top/2019/12/03/Introduction-of-open-source-simulation-tool/)
+- [Microsemi Libero使用技巧——FPGA全局网络的设置](http://www.wangchaochao.top/2019/11/30/Libero-Skill-6/)
 - [详解EMC测试国家标准17626](http://www.wangchaochao.top/2019/11/24/Detailed-explanation-of-EMC-test-national-standards/)
-- [电路板上的这些标志你都知道是什么含义吗？](http://www.wangchaochao.top/2019/11/17/Certification/)
-- [《手把手教你设计CPU——RISC-V处理器》读书笔记](http://www.wangchaochao.top/2019/11/03/RISC-V-CPU-DIY-Read-Note/)
 
 ### 历史博文
 
+- [电路板上的这些标志你都知道是什么含义吗？](http://www.wangchaochao.top/2019/11/17/Certification/)
+- [《手把手教你设计CPU——RISC-V处理器》读书笔记](http://www.wangchaochao.top/2019/11/03/RISC-V-CPU-DIY-Read-Note/)
 - [基于uFUN开发板的RGB调色器——STM32程序和Qt上位机全开源](http://www.wangchaochao.top/2019/10/25/uFUN-RGB-Control-Open/)
 - [千呼万唤始出来——uFUN开发板2.0开箱评测](http://www.wangchaochao.top/2019/10/15/uFUN2-0/)
 - [Microsemi Libero使用技巧——使用FlashPro生成stp程序文件](http://www.wangchaochao.top/2019/10/14/Libero-Skill-5/)
