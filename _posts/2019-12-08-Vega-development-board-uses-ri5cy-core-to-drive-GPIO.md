@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:    织女星开发板使用RISC-V RI5CY核驱动GPIO
-subtitle:	iverilog教程
+subtitle:	织女星开发板使用
 date:       2019-12-08 22:22:40 +0800
 author:     Wang Chao
 header-img: img/RISC-V.png
@@ -19,6 +19,8 @@ tag:
 - 两个ARM核： Cortex-M4F + Cortex-M0+ 。
 
 4个核被分为两个子系统，大核CM4F/RI5CY和小核CM0+/ZERO-RISCY，片上集成1.25 MB Flash 、384 KB SRAM，其中1 MB的Flash被大核所使用，起始地址0x0000_0000，另外的256 KB Flash被小核所使用，起始地址0x0100_0000。利用该开发板，用户可以快速建立一个使用 RV32M1 的 RISC-V应用和演示系统。详细的介绍可以参考： [真正的RISC-V开发板——VEGA织女星开发板开箱评测](http://www.wangchaochao.top/2019/06/22/VEGA-4/) ，本篇文章介绍如何基于RISC-V RI5CY内核点亮板载的RGB LED和读取按键状态，演示GPIO外设的使用。
+
+![](https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/VegaLite/Pic/vega_2.jpeg)
 
 ### 准备工作
 
