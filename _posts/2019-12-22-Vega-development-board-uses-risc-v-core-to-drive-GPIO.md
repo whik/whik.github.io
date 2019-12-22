@@ -1,8 +1,8 @@
 ---
 layout:     post
-title:    织女星开发板使用RISC-V RI5CY核驱动GPIO
+title:    织女星开发板使用RISC-V核驱动GPIO
 subtitle:	织女星开发板使用
-date:       2019-12-08 22:22:40 +0800
+date:       2019-12-22 12:22:40 +0800
 author:     Wang Chao
 header-img: img/RISC-V.png
 catalog:    true
@@ -18,18 +18,20 @@ tag:
 - 两个RISC-V核：RI5CY + ZERO_RISCY。
 - 两个ARM核： Cortex-M4F + Cortex-M0+ 。
 
-4个核被分为两个子系统，大核CM4F/RI5CY和小核CM0+/ZERO-RISCY，片上集成1.25 MB Flash 、384 KB SRAM，其中1 MB的Flash被大核所使用，起始地址0x0000_0000，另外的256 KB Flash被小核所使用，起始地址0x0100_0000。利用该开发板，用户可以快速建立一个使用 RV32M1 的 RISC-V应用和演示系统。详细的介绍可以参考： [真正的RISC-V开发板——VEGA织女星开发板开箱评测](http://www.wangchaochao.top/2019/06/22/VEGA-4/) ，本篇文章介绍如何基于RISC-V RI5CY内核点亮板载的RGB LED和读取按键状态，演示GPIO外设的使用。
+4个核被分为两个子系统，大核CM4F/RI5CY和小核CM0+/ZERO-RISCY，片上集成1.25 MB Flash 、384 KB SRAM，其中1 MB的Flash被大核所使用，起始地址0x0000_0000，另外的256 KB Flash被小核所使用，起始地址0x0100_0000。利用该开发板，用户可以快速建立一个使用 RV32M1 的 RISC-V应用和演示系统。详细的介绍可以参考： [真正的RISC-V开发板——VEGA织女星开发板开箱评测](http://www.wangchaochao.top/2019/06/22/VEGA-4/) ，本篇文章介绍如何基于RISC-V RI5CY/ZERO内核来点亮板载的RGB_LED/STS_LED、读取按键输入，演示GPIO的输入输出和外部中断功能。
 
 ![](https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/VegaLite/Pic/vega_2.jpeg)
 
 ### 准备工作
+
+在进行以下操作之前，要确保开发环境已经搭建完成，而且能正常下载调试。
 
 - 织女星开发板RISC-V开发环境：Eclipse + riscv32 工具链 + OpenOCD调试工具
 - 织女星开发板SDK包：rv32m1_sdk_riscv
 - 织女星开发板的原理图
 - RV32M1参考手册
 
-以上资料的获取、开发环境搭建和启动模式修改等教程，可以到官方中文论坛查找： www.open-isa.cn
+以上资料的获取、开发环境搭建和启动模式修改等教程，可以到官方中文论坛查找：`www.open-isa.cn`
 
 或者是参考我分享的以下文章：
 
@@ -41,7 +43,7 @@ tag:
 
 ### 寄存器简介
 
-根据参考手册GPIO章节的介绍，我们可以获得关于GPIO相关寄存器信息：
+根据RV32M1参考手册GPIO章节的介绍，我们可以获得关于GPIO相关寄存器信息：
 
 各GPIO组的基地址：
 
@@ -171,6 +173,7 @@ PORT_SetPinConfig已经包含了PORT_SetPinMux的功能，可以只使用PORT_Se
 控制GPIO的输入输出方式，及默认输出电平，基于PDDR、PCOR、PSOR寄存器实现。
 
 ```
+
 gpio_pin_config_t io_init;
 
 //配置输出/输出模式
@@ -217,6 +220,7 @@ GPIO操作的函数还有很多，详细的介绍和实现可以直接查看库�
 #### led_driver.c文件内容
 
 ```
+
 #include "led_driver.h"
 
 void LED_RGB_Init(void)
@@ -237,11 +241,14 @@ void LED_RGB_Init(void)
 	config.slewRate 			= kPORT_FastSlewRate;		 //翻转速率
 
 	CLOCK_EnableClock(LED_RGB_Clk_Name);
+	CLOCK_EnableClock(LED_STS_Clk_Name);		//GPIOE时钟必须一直开启
+	CLOCK_EnableClock(kCLOCK_Rgpio1);			//GPIOE配置需要使能这个时钟
 
 	/*以下两个函数都可以配置端口功能*/
 	PORT_SetPinConfig(LED_RGB_Port, LED_RED_Pin, &config);		//配置功能更详细
 	PORT_SetPinConfig(LED_RGB_Port, LED_GREEN_Pin, &config);
 	PORT_SetPinConfig(LED_RGB_Port, LED_BLUE_Pin, &config);
+	PORT_SetPinConfig(LED_STS_Port, LED_STS_Pin, &config);
 
 //	PORT_SetPinMux(LED_RGB_Port, LED_RED_Pin, kPORT_MuxAsGpio);	//只能配置是否复用
 //	PORT_SetPinMux(LED_RGB_Port, LED_GREEN_Pin, kPORT_MuxAsGpio);
@@ -252,15 +259,23 @@ void LED_RGB_Init(void)
 	GPIO_PinInit(LED_RGB_GPIO, LED_RED_Pin, &io_init);
 	GPIO_PinInit(LED_RGB_GPIO, LED_GREEN_Pin, &io_init);
 	GPIO_PinInit(LED_RGB_GPIO, LED_BLUE_Pin, &io_init);
+	GPIO_PinInit(LED_STS_GPIO, LED_STS_Pin, &io_init);
 }
 
 ```
 
-要注意的是，时钟使能要放在GPIO配置之前，否则不能访问GPIO配置寄存器，在配置完成之后可以关闭时钟，也可以一直开启。
+要注意的是，时钟使能要放在GPIO配置之前，否则不能访问GPIO配置寄存器，在配置完成之后可以关闭时钟，也可以一直开启。其中GPIOE非常特殊，要想使用GPIOE，**必须使能Rgpio1快速时钟**，其他的GPIO配置不需要，这是因为GPIOE属于快速GPIO，和其他几组GPIO不是同一个总线。
+
+```
+
+	CLOCK_EnableClock(kCLOCK_Rgpio1);			//GPIOE配置需要使能这个时钟
+
+```
 
 #### led_driver.h文件内容
 
 ```
+
 #ifndef __LED_DRIVER_H__
 #define __LED_DRIVER_H__
 
@@ -276,6 +291,7 @@ LED_RGB_RED 	- A24
 LED_STS 		- E0
 */
 
+
 #define LED_RED_Pin		24
 #define LED_GREEN_Pin	23
 #define LED_BLUE_Pin	22
@@ -283,6 +299,15 @@ LED_STS 		- E0
 #define LED_RGB_Port		PORTA
 #define LED_RGB_GPIO		GPIOA
 #define LED_RGB_Clk_Name	kCLOCK_PortA
+
+#define LED_STS_Pin		0
+#define LED_STS_Port		PORTE
+#define LED_STS_GPIO		GPIOE
+#define LED_STS_Clk_Name	kCLOCK_PortE
+
+#define LED_STS_ON			GPIO_WritePinOutput(LED_STS_GPIO, LED_STS_Pin, 1)
+#define LED_STS_OFF			GPIO_WritePinOutput(LED_STS_GPIO, LED_STS_Pin, 0)
+#define LED_STS_TOGGLE		GPIO_TogglePinsOutput(LED_STS_GPIO, 1 << LED_STS_Pin)
 
 #define LED_RED_ON			GPIO_WritePinOutput(LED_RGB_GPIO, LED_RED_Pin, 1)
 #define LED_RED_OFF			GPIO_WritePinOutput(LED_RGB_GPIO, LED_RED_Pin, 0)
@@ -306,7 +331,7 @@ void LED_RGB_Init(void);
 
 ### 板载按键初始化
 
-按键部分硬件原理图，默认SW2上拉，按下为低电平。
+按键部分硬件原理图，按下为低电平。
 
 ![](https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/VEGA_GPIO/SW_GPIO.jpg)
 
@@ -315,7 +340,10 @@ void LED_RGB_Init(void);
 ```
 
 #include "button_driver.h"
+#include "delay.h"
+#include "led_driver.h"
 
+//按键使用普通输入GPIO方式
 void Button_Init(void)
 {
 	gpio_pin_config_t io_init;
@@ -332,81 +360,259 @@ void Button_Init(void)
 	config.passiveFilterEnable 	= kPORT_PassiveFilterEnable;	//滤波器
 
 	CLOCK_EnableClock(BTN_SW2_Clk_Name);
+	CLOCK_EnableClock(BTN_SW3_Clk_Name);
+//	CLOCK_EnableClock(BTN_SW4_Clk_Name);
+//	CLOCK_EnableClock(BTN_SW5_Clk_Name);
+	CLOCK_EnableClock(kCLOCK_Rgpio1);			//GPIOE配置需要使能这个时钟
 
 	//以下两个函数功能一样
 	PORT_SetPinConfig(BTN_SW2_Port, BTN_SW2_Pin, &config);
+	PORT_SetPinConfig(BTN_SW3_Port, BTN_SW3_Pin, &config);
+	PORT_SetPinConfig(BTN_SW4_Port, BTN_SW4_Pin, &config);
+	PORT_SetPinConfig(BTN_SW5_Port, BTN_SW5_Pin, &config);
+
 //	PORT_SetPinMux(BTN_SW2_Port, BTN_SW2_Pin, kPORT_MuxAsGpio);	//设置IO模式为通用GPIO
+//	PORT_SetPinMux(BTN_SW3_Port, BTN_SW3_Pin, kPORT_MuxAsGpio);	//设置IO模式为通用GPIO
+//	PORT_SetPinMux(BTN_SW4_Port, BTN_SW4_Pin, kPORT_MuxAsGpio);	//设置IO模式为通用GPIO
+//	PORT_SetPinMux(BTN_SW5_Port, BTN_SW5_Pin, kPORT_MuxAsGpio);	//设置IO模式为通用GPIO
 
 	GPIO_PinInit(BTN_SW2_GPIO, BTN_SW2_Pin, &io_init);
+	GPIO_PinInit(BTN_SW3_GPIO, BTN_SW3_Pin, &io_init);
+	GPIO_PinInit(BTN_SW4_GPIO, BTN_SW4_Pin, &io_init);
+	GPIO_PinInit(BTN_SW5_GPIO, BTN_SW5_Pin, &io_init);
+}
+
+//按键使用外部中断初始化函数
+void ButtonInterruptInit(void)
+{
+	gpio_pin_config_t io_init;
+	port_pin_config_t config;
+
+	io_init.outputLogic  = 0;
+	io_init.pinDirection = kGPIO_DigitalInput;
+
+	config.mux 					= kPORT_MuxAsGpio;				//通用GPIO
+	config.lockRegister 		= kPORT_LockRegister;			//PCR寄存器被锁定，不能再次改变
+	config.pullSelect 			= kPORT_PullUp;					//上拉
+	config.slewRate 			= kPORT_FastSlewRate;			//翻转速率
+	config.lockRegister 		= kPORT_LockRegister;			//PCR寄存器被锁定，不能再次改变
+	config.passiveFilterEnable 	= kPORT_PassiveFilterEnable;	//滤波器
+
+	CLOCK_EnableClock(BTN_SW2_Clk_Name);
+	CLOCK_EnableClock(BTN_SW3_Clk_Name);
+//	CLOCK_EnableClock(BTN_SW4_Clk_Name);
+//	CLOCK_EnableClock(BTN_SW5_Clk_Name);
+
+	CLOCK_EnableClock(kCLOCK_Rgpio1);			//GPIOE配置需要使能这个时钟
+
+	//以下两个函数功能一样
+	PORT_SetPinConfig(BTN_SW2_Port, BTN_SW2_Pin, &config);
+	PORT_SetPinConfig(BTN_SW3_Port, BTN_SW3_Pin, &config);
+	PORT_SetPinConfig(BTN_SW4_Port, BTN_SW4_Pin, &config);
+	PORT_SetPinConfig(BTN_SW5_Port, BTN_SW5_Pin, &config);
+
+	//设置中断触发方式
+	PORT_SetPinInterruptConfig(BTN_SW2_Port, BTN_SW2_Pin, kPORT_InterruptFallingEdge);	//下降沿触发中断
+	PORT_SetPinInterruptConfig(BTN_SW3_Port, BTN_SW3_Pin, kPORT_InterruptFallingEdge);
+	PORT_SetPinInterruptConfig(BTN_SW4_Port, BTN_SW4_Pin, kPORT_InterruptFallingEdge);
+	PORT_SetPinInterruptConfig(BTN_SW5_Port, BTN_SW5_Pin, kPORT_InterruptFallingEdge);
+
+#if defined(CPU_RV32M1_ri5cy)
+	//RI5CY Core GPIOE需要使能以下两个函数, ZERO Core不用
+	INTMUX_Init(INTMUX0);
+	INTMUX_EnableInterrupt(INTMUX0, 0, PORTE_IRQn);
+#endif
+
+	EnableIRQ(BTN_SW2_IRQ);
+	EnableIRQ(BTN_SW3_IRQ);
+//	EnableIRQ(BTN_SW4_IRQ);
+//	EnableIRQ(BTN_SW5_IRQ);
+
+	GPIO_PinInit(BTN_SW2_GPIO, BTN_SW2_Pin, &io_init);
+	GPIO_PinInit(BTN_SW3_GPIO, BTN_SW3_Pin, &io_init);
+	GPIO_PinInit(BTN_SW4_GPIO, BTN_SW4_Pin, &io_init);
+	GPIO_PinInit(BTN_SW5_GPIO, BTN_SW5_Pin, &io_init);
+}
+
+void PORTA_IRQHandler(void)
+{
+    GPIO_ClearPinsInterruptFlags(BTN_SW2_GPIO, 1U << BTN_SW2_Pin);
+	LED_STS_TOGGLE;
+	LOG("sw2 is pressed \r\n");
+}
+
+//GPIOE外部中断函数
+void PORTE_IRQHandler(void)
+{
+	uint32_t flag;
+
+	flag = GPIO_GetPinsInterruptFlags(BTN_SW3_GPIO);
+
+    GPIO_ClearPinsInterruptFlags(BTN_SW3_GPIO, 1U << BTN_SW3_Pin);
+    GPIO_ClearPinsInterruptFlags(BTN_SW4_GPIO, 1U << BTN_SW4_Pin);
+    GPIO_ClearPinsInterruptFlags(BTN_SW5_GPIO, 1U << BTN_SW5_Pin);
+
+    if(flag & (1 << BTN_SW3_Pin))	//SW3产生中断
+    {
+    	LED_RED_TOGGLE;
+    	LOG("sw3 is pressed \r\n");
+    }
+	else if(flag & (1 << BTN_SW4_Pin))
+	{
+		LED_GREEN_TOGGLE;
+    	LOG("sw4 is pressed \r\n");
+	}
+    else if(flag & (1 << BTN_SW5_Pin))
+	{
+    	LED_BLUE_TOGGLE;
+    	LOG("sw5 is pressed \r\n");
+	}
+}
+
+//轮询方式获取按键状态
+uint8_t GetKey(void)
+{
+	uint8_t key = 1;
+	//按键按下为0
+	if(BTN_SW2_IN && BTN_SW3_IN && BTN_SW4_IN && BTN_SW5_IN)
+	{
+		Delay_ms(10);
+		if(!BTN_SW2_IN)
+			key = 2;
+		else if(!BTN_SW3_IN)
+			key = 3;
+		else if(!BTN_SW4_IN)
+			key = 4;
+		else if(!BTN_SW5_IN)
+			key = 5;
+		while(!(BTN_SW2_IN && BTN_SW3_IN && BTN_SW4_IN && BTN_SW5_IN));
+	}
+	return key;
 }
 
 ```
 
-SW2按键配置为上拉输入模式。
+按键配置为上拉输入模式，同样如果使用GPIOE作为通用GPIO输入，**还需要使能Rgpio1时钟**：
+
+```
+
+	CLOCK_EnableClock(kCLOCK_Rgpio1);			//GPIOE配置需要使能这个时钟
+
+```
+
+如果使用GPIOE的外部中断功能，**还需要使能INTMUX**：
+
+```
+
+#if defined(CPU_RV32M1_ri5cy)
+	//RI5CY Core GPIOE需要使能以下两个函数, ZERO Core不用
+	INTMUX_Init(INTMUX0);
+	INTMUX_EnableInterrupt(INTMUX0, 0, PORTE_IRQn);
+#endif
+
+```
 
 #### button_driver.h文件内容
 
 ```
 
-ifndef __BUTTON_DRIVER_H__
+#ifndef __BUTTON_DRIVER_H__
 #define __BUTTON_DRIVER_H__
 
 #include "fsl_gpio.h"
 #include "fsl_port.h"
+#include "fsl_intmux.h"
 
 /*
- * SW2 - PA0
- *
+ * SW2 - A0
+ * SW3 - E12
+ * SW4 - E8
+ * SW5 - E9
  * */
 
 //按下为低电平
 
 #define BTN_SW2_GPIO 	GPIOA
+#define BTN_SW3_GPIO 	GPIOE
+#define BTN_SW4_GPIO 	GPIOE
+#define BTN_SW5_GPIO 	GPIOE
+
 #define BTN_SW2_Pin		0
+#define BTN_SW3_Pin		12
+#define BTN_SW4_Pin		8
+#define BTN_SW5_Pin		9
+
 #define BTN_SW2_Port	PORTA
+#define BTN_SW3_Port	PORTE
+#define BTN_SW4_Port	PORTE
+#define BTN_SW5_Port	PORTE
+
+#define BTN_SW2_IRQ		PORTA_IRQn
+#define BTN_SW3_IRQ		PORTE_IRQn
+#define BTN_SW4_IRQ		PORTE_IRQn
+#define BTN_SW5_IRQ		PORTE_IRQn
+
 #define BTN_SW2_Clk_Name	kCLOCK_PortA
+#define BTN_SW3_Clk_Name	kCLOCK_PortE
+#define BTN_SW4_Clk_Name	kCLOCK_PortE
+#define BTN_SW5_Clk_Name	kCLOCK_PortE
 
 #define BTN_SW2_IN	GPIO_ReadPinInput(BTN_SW2_GPIO, BTN_SW2_Pin)
+#define BTN_SW3_IN	GPIO_ReadPinInput(BTN_SW3_GPIO, BTN_SW3_Pin)
+#define BTN_SW4_IN	GPIO_ReadPinInput(BTN_SW4_GPIO, BTN_SW4_Pin)
+#define BTN_SW5_IN	GPIO_ReadPinInput(BTN_SW5_GPIO, BTN_SW5_Pin)
 
 /*
 #define BTN_SW2_IN	ReadGPIO(BTN_SW2_GPIO, BTN_SW2_Pin)
+#define BTN_SW3_IN	ReadGPIO(BTN_SW3_GPIO, BTN_SW3_Pin)
+#define BTN_SW4_IN	ReadGPIO(BTN_SW4_GPIO, BTN_SW4_Pin)
+#define BTN_SW5_IN	ReadGPIO(BTN_SW5_GPIO, BTN_SW5_Pin)
 */
 
 void Button_Init(void);
+uint8_t GetKey(void);
+void ButtonInterruptInit(void);
 
 #endif
 
 ```
 
-通过GPIO读取函数来获取SW2输入状态。
+通过GPIO读取函数来获取按键输入状态，或者是通过中断标志来判断输入状态。
 
 ### 主函数应用
 
-主函数实现sw2按键按下时，蓝色LED状态翻转：
+使用外部中断方式读取按键输入状态。
 
 ```
 
+#include "main.h"
+
+extern uint32_t SystemCoreClock;
+
 int main(void)
 {
-	BOARD_BootClockRUN();	//系统时钟配置
+	BOARD_BootClockRUN();	//ϵͳʱ֓Ťփ
 
 	UART0_Init();
 	Delay_Init();
-	LOG("Hello RV32M1 \r\n");
+
+	LOG("SystemCoreClock: %ld \r\n", SystemCoreClock);
+
+#if defined(CPU_RV32M1_ri5cy)
+	LOG("RV32M1 RISC-V RI5CY Core Demo \r\n");
+#elif defined(CPU_RV32M1_zero_riscy)
+	LOG("RV32M1 RISC-V ZERO Core Demo \r\n");
+#endif
 
 	LED_RGB_Init();
-	Button_Init();
+//	Button_Init();
+	ButtonInterruptInit();
+	// LPMTR2_Init();
+	// LPIT1_CH3_Init();
 
 	while (1)
 	{
-//		LED_RED_TOGGLE;
-//		Delay_ms(100);
-		if(BTN_SW2_IN == 0)
-		{
-			while(!BTN_SW2_IN);
-			LOG("sw2 press \r\n");
-			LED_BLUE_TOGGLE;
-		}
+
 	}
 }
 
@@ -416,15 +622,14 @@ int main(void)
 
 ![]( https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/VegaLite/BuildIDE/LED_Blink.gif )
 
-织女星开发板VEGA_Lite支持从4个核启动，所以在进行程序下载之前，要确认当前的启动模式是从RISC-V RI5CY核启动的，否则程序烧写进去不会运行。
+织女星开发板VEGA_Lite支持从4个核启动，所以在进行程序下载之前，要确认当前的启动模式和当前的工程是对应的。如当前工程是使用RISC-V RI5CY核来驱动GPIO，那么就需要配置芯片启动模式为RI5CY核启动。否则会不能下载。关于启动模式的修改可以参考：[织女星开发板启动模式修改](http://www.wangchaochao.top/2019/05/28/VEGA-2/)
 
-关于启动模式的修改可以参考：[织女星开发板启动模式修改](http://www.wangchaochao.top/2019/05/28/VEGA-2/)
-
-Eclipse工程源码下载：[RI5CY_GPIO_Demo.rar](https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/VEGA_GPIO/RI5CY_GPIO_Demo.rar)
+- RI5CY驱动GPIO源码下载：[RI5CY_GPIO_Demo.rar](https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/VEGA_GPIO/RI5CY_GPIO_Demo.rar)
+- ZERO驱动GPIO源码下载：[ZERO_GPIO_Demo.rar](https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/VEGA_GPIO/ZERO_GPIO_Demo.rar)
 
 ### 总结
 
-GPIOE组的使用，和其他组的GPIO使用不太一样，需要特别设置一下，目前还没有找到相关资料，所以板子上的LED_STS，和SW3/4/5还没成功的驱动起来，等找到相关资料再来补充。
+RV32M1芯片的GPIOE与其他几组GPIO配置方法稍有不同，使用时要特别注意。
 
 ### 参考资料
 
@@ -446,4 +651,3 @@ GPIOE组的使用，和其他组的GPIO使用不太一样，需要特别设置�
 
 - 个人博客：www.wangchaochao.top
 - 我的公众号：mcu149
-
