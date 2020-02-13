@@ -27,12 +27,14 @@ www.wangchaochao.top
 
 ### 最新博文
 
+- [基于Qt的新冠肺炎疫情数据实时监控平台（开源小项目）](http://www.wangchaochao.top/2020/02/14/qt-ncov)
+- [兆易创新首款RISC-V开发板——GD32VF103-EVAL开箱评测](http://www.wangchaochao.top/2019/12/29/gd32vf103v-eval-board-unpacking-report/)
 - [织女星开发板使用RISC-V RI5CY核驱动GPIO](http://www.wangchaochao.top/2019/12/08/Vega-development-board-uses-ri5cy-core-to-drive-GPIO/)
-- [全平台轻量开源verilog仿真工具iverilog+GTKWave使用教程](http://www.wangchaochao.top/2019/12/03/Introduction-of-open-source-simulation-tool/)
-- [Microsemi Libero使用技巧——FPGA全局网络的设置](http://www.wangchaochao.top/2019/11/30/Libero-Skill-6/)
 
 ### 历史博文
 
+- [全平台轻量开源verilog仿真工具iverilog+GTKWave使用教程](http://www.wangchaochao.top/2019/12/03/Introduction-of-open-source-simulation-tool/)
+- [Microsemi Libero使用技巧——FPGA全局网络的设置](http://www.wangchaochao.top/2019/11/30/Libero-Skill-6/)
 - [详解EMC测试国家标准17626](http://www.wangchaochao.top/2019/11/24/Detailed-explanation-of-EMC-test-national-standards/)
 - [电路板上的这些标志你都知道是什么含义吗？](http://www.wangchaochao.top/2019/11/17/Certification/)
 - [《手把手教你设计CPU——RISC-V处理器》读书笔记](http://www.wangchaochao.top/2019/11/03/RISC-V-CPU-DIY-Read-Note/)
