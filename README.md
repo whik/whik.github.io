@@ -27,12 +27,17 @@ www.wangchaochao.top
 
 ### 最新博文
 
-- [基于Qt的新冠肺炎疫情数据实时监控平台（开源小项目）](http://www.wangchaochao.top/2020/02/14/qt-ncov)
-- [兆易创新首款RISC-V开发板——GD32VF103-EVAL开箱评测](http://www.wangchaochao.top/2019/12/29/gd32vf103v-eval-board-unpacking-report/)
-- [织女星开发板使用RISC-V RI5CY核驱动GPIO](http://www.wangchaochao.top/2019/12/08/Vega-development-board-uses-ri5cy-core-to-drive-GPIO/)
+- [iMX287A基于嵌入式Qt的新冠肺炎疫情监控平台](http://www.wangchaochao.top/2020/03/04/iMX287A-4-Novel-coronavirus-pneumonia-surveillance-platform-based-on-embedded-Qt/)
+- [iMX287A嵌入式Qt环境搭建](http://www.wangchaochao.top/2020/03/03/iMX287A-3-Building-of-embedded-QT-environment/)
+- [iMX287A多种方法实现流水灯效果](http://www.wangchaochao.top/2020/03/02/iMX287A-2-Various-methods-to-achieve-the-effect-of-running-water-lamp/)
 
 ### 历史博文
 
+- [iMX287A交叉编译环境搭建](http://www.wangchaochao.top/2020/03/01/iMX287A-1-Build-cross-compilation-environment/)
+- [基于Qt的新冠肺炎疫情数据实时监控平台1.1版本](http://www.wangchaochao.top/2020/02/15/qt-ncov-2/)
+- [基于Qt的新冠肺炎疫情数据实时监控平台（开源小项目）](http://www.wangchaochao.top/2020/02/14/qt-ncov)
+- [兆易创新首款RISC-V开发板——GD32VF103-EVAL开箱评测](http://www.wangchaochao.top/2019/12/29/gd32vf103v-eval-board-unpacking-report/)
+- [织女星开发板使用RISC-V RI5CY核驱动GPIO](http://www.wangchaochao.top/2019/12/08/Vega-development-board-uses-ri5cy-core-to-drive-GPIO/)
 - [全平台轻量开源verilog仿真工具iverilog+GTKWave使用教程](http://www.wangchaochao.top/2019/12/03/Introduction-of-open-source-simulation-tool/)
 - [Microsemi Libero使用技巧——FPGA全局网络的设置](http://www.wangchaochao.top/2019/11/30/Libero-Skill-6/)
 - [详解EMC测试国家标准17626](http://www.wangchaochao.top/2019/11/24/Detailed-explanation-of-EMC-test-national-standards/)
