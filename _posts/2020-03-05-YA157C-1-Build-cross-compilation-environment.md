@@ -2,7 +2,7 @@
 layout:     post
 title:    YA157C交叉编译环境搭建
 subtitle:	嵌入式Linux
-date:       2020-03-04 12:00:00 +0800
+date:       2020-03-05 12:00:00 +0800
 author:     Wang Chao
 header-img: img/ya157c.jpg
 catalog:    true
@@ -39,7 +39,7 @@ MYD-YA157C开发套件由核心板MYC-YA157C和底板MYB-YA157C组成，主控�
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200305214955466.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaWsxMTk0,size_16,color_FFFFFF,t_70)
 
-### 3.主机搭建交叉编译环境
+### 2.主机搭建交叉编译环境
 
 所谓交叉编译，其实是相对于本地编译，即在一种平台上编译出来的程序，可以在另外一个平台下运行，即编译的环境和运行的环境不一样，属于交叉的。在进行嵌入式开发时，常常是在PC(x86架构)上使用交叉编译工具编译，编译出来的可执行文件在开发板(ARM)平台下运行。
 
@@ -94,7 +94,7 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 如果能输出版本信息，就说明安装成功了。
 
-### 4.编译第一个ARM Linux程序——Hello World
+### 3.编译第一个ARM Linux程序——Hello World
 
 有了交叉编译工具，和PC平台的gcc使用方法一样，就可以直接编译第一个程序了。
 
@@ -151,11 +151,11 @@ $CC hello.c -o arm.o
 
 因为这个文件是运行在ARM架构的系统上的，所以在PC上不能运行，下面我们把这个文件放到开发板上去运行。
 
-### 5.在开发板上运行Hello World程序
+### 4.在开发板上运行Hello World程序
 
 怎么能在开发板上运行这个程序呢？也就是怎么能把这个文件传输到开发板上呢？
 
-#### 5.1 U盘拷贝
+#### 4.1 U盘拷贝
 
 这恐怕是最简单的方法了。把生成的arm.o文件复制到U盘里，把U盘插到板子上的USB接口，并挂载到mnt目录
 
@@ -194,7 +194,7 @@ umount /mnt
 
 这种方式有点麻烦，我们来使用另外一种方法。
 
-#### 5.2 scp文件传输
+#### 4.2 scp文件传输
 
 在使用交叉编译工具链，编译出arm.o文件时，我们是通过拷贝到U盘，然后把Ｕ盘插到开发板上来运行程序的，但是这样未免太麻烦了。
 
@@ -280,7 +280,7 @@ scp -P 4588 remote@192.168.1.136:/usr/local/sin.sh /home/administrator
 
 - 2.使用scp命令要确保使用的用户具有可读取远程服务器相应文件的权限，否则scp命令是无法起作用的。
 
-#### 5.3 tftp文件传输
+#### 4.3 tftp文件传输
 
 另一种文件传输方式，比scp麻烦一些，先在主机配置tftp服务器，并配置共享目录，然后就可以开始文件传输了。
 
@@ -327,7 +327,7 @@ tftp 192.168.1.111 -g -r a.cpp
 -r 表示远程主机的文件名(remote file)
 ```
 
-### 6.ssh登录开发板
+### 5.ssh登录开发板
 
 如果scp和tftp都可以正常传输，我们还可以使用ssh命令登录开发板，和串口登录是一样的。
 
@@ -337,7 +337,7 @@ ssh root@192.168.1.136
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200305213445532.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaWsxMTk0,size_16,color_FFFFFF,t_70)
 
-### 7.注意
+### 6.注意
 
 如果遇到无法正常安装程序，请尝试安装以下程序。
 
@@ -362,7 +362,7 @@ sudo apt-get install ncurses-dev bc linux-headers-generic gcc-multilib
 libncurses5-dev libncursesw5-dev lrzsz dos2unix lib32ncurses5 repo libssl-dev
 ```
 
-### 8.shell脚本点灯
+### 7.shell脚本点灯
 
 简单写一个shell脚本闪个灯，没什么技术含量，led_blink.sh文件内容：
 
