@@ -14,10 +14,10 @@ tag:
 
 ### 0.系列教程
 
-- [我用STM32MP1做了个疫情监控平台1—交叉编译环境搭建](https://www.wangchaochao.top/2020/03/04/YA157C-1-Build-cross-compilation-environment/)
+- [我用STM32MP1做了个疫情监控平台1—交叉编译环境搭建](https://www.wangchaochao.top/2020/03/05/YA157C-1-Build-cross-compilation-environment/)
 - [我用STM32MP1做了个疫情监控平台2—Qt环境搭建](https://www.wangchaochao.top/2020/03/05/YA157C-2-Building-of-embedded-QT-environment/)
 - [我用STM32MP1做了个疫情监控平台3—疫情监控平台实现](https://www.wangchaochao.top/2020/03/06/YA157C-3-Novel-coronavirus-pneumonia-surveillance-platform-based-on-embedded-Qt/)
-- [我用STM32MP1做了个疫情监控平台4—功能完善界面重新设计](https://www.wangchaochao.top/2020/03/02/YA157C-4-Functional-interface-redesign/)
+- [我用STM32MP1做了个疫情监控平台4—功能完善界面重新设计](https://www.wangchaochao.top/2020/03/22/YA157C-4-Functional-interface-redesign/)
 
 ### 1.前言
 
@@ -385,8 +385,7 @@ https://gitee.com/whik/qte_2019_ncov
 
 ### 系列教程
 
-- [我用STM32MP1做了个疫情监控平台1—交叉编译环境搭建](https://www.wangchaochao.top/2020/03/04/YA157C-1-Build-cross-compilation-environment/)
+- [我用STM32MP1做了个疫情监控平台1—交叉编译环境搭建](https://www.wangchaochao.top/2020/03/05/YA157C-1-Build-cross-compilation-environment/)
 - [我用STM32MP1做了个疫情监控平台2—Qt环境搭建](https://www.wangchaochao.top/2020/03/05/YA157C-2-Building-of-embedded-QT-environment/)
 - [我用STM32MP1做了个疫情监控平台3—疫情监控平台实现](https://www.wangchaochao.top/2020/03/06/YA157C-3-Novel-coronavirus-pneumonia-surveillance-platform-based-on-embedded-Qt/)
-- [我用STM32MP1做了个疫情监控平台4—功能完善界面重新设计](https://www.wangchaochao.top/2020/03/02/YA157C-4-Functional-interface-redesign/)
-
+- [我用STM32MP1做了个疫情监控平台4—功能完善界面重新设计](https://www.wangchaochao.top/2020/03/22/YA157C-4-Functional-interface-redesign/)
