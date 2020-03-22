@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:    YA157C基于嵌入式Qt的新冠肺炎疫情监控平台
+title:    我用STM32MP1做了个疫情监控平台3—疫情监控平台实现
 subtitle:	嵌入式Linux
 date:       2020-03-06 12:00:00 +0800
 author:     Wang Chao
@@ -12,6 +12,12 @@ tag:
     - Qt
 ---
 
+### 0.系列教程
+
+- [我用STM32MP1做了个疫情监控平台1—交叉编译环境搭建](https://www.wangchaochao.top/2020/03/04/YA157C-1-Build-cross-compilation-environment/)
+- [我用STM32MP1做了个疫情监控平台2—Qt环境搭建](https://www.wangchaochao.top/2020/03/05/YA157C-2-Building-of-embedded-QT-environment/)
+- [我用STM32MP1做了个疫情监控平台3—疫情监控平台实现](https://www.wangchaochao.top/2020/03/06/YA157C-3-Novel-coronavirus-pneumonia-surveillance-platform-based-on-embedded-Qt/)
+- [我用STM32MP1做了个疫情监控平台4—功能完善界面重新设计](https://www.wangchaochao.top/2020/03/02/YA157C-4-Functional-interface-redesign/)
 
 ### 1.前言
 
@@ -23,11 +29,11 @@ tag:
 
 桌面Linux版本的运行效果：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200305105217487.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaWsxMTk0,size_16,color_FFFFFF,t_70)
+![](https://img-blog.csdnimg.cn/20200305105217487.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaWsxMTk0,size_16,color_FFFFFF,t_70)
 
 YA157C开发板实现效果：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200306161448137.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaWsxMTk0,size_16,color_FFFFFF,t_70)
+![](https://img-blog.csdnimg.cn/20200306161448137.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaWsxMTk0,size_16,color_FFFFFF,t_70)
 
 ### 2.数据接口的获取
 
@@ -238,7 +244,7 @@ QString Dialog::GetLocalmachineIP()
 
 桌面Linux版本的运行效果：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200305105217487.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaWsxMTk0,size_16,color_FFFFFF,t_70)
+![](https://img-blog.csdnimg.cn/20200305105217487.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaWsxMTk0,size_16,color_FFFFFF,t_70)
 
 ### 4.在开发板上运行Qt程序
 
@@ -265,19 +271,19 @@ scp qte_2019_ncov root@192.168.1.109:/home/root
 
 最终效果
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200306161448137.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaWsxMTk0,size_16,color_FFFFFF,t_70)
+![](https://img-blog.csdnimg.cn/20200306161448137.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaWsxMTk0,size_16,color_FFFFFF,t_70)
 
 这个版本是上一个版本的，右上角没有显示开发板的IP地址和成功失败次数统计，最新版本的程序中已经添加了这个功能。
 
 桌面Linux版效果：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200305105217487.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaWsxMTk0,size_16,color_FFFFFF,t_70)
+![](https://img-blog.csdnimg.cn/20200305105217487.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaWsxMTk0,size_16,color_FFFFFF,t_70)
 
 ### 5.使用无线模块联网
 
 YA157C开发板已经板载了一个WiFi & 蓝牙模组——AP6212，可以直接连接无线网，这样就不需要使用网线的方式联网了。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200306181302163.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaWsxMTk0,size_16,color_FFFFFF,t_70)
+![](https://img-blog.csdnimg.cn/20200306181302163.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaWsxMTk0,size_16,color_FFFFFF,t_70)
 
 ```shell
 #关闭eth0
@@ -312,9 +318,9 @@ iw wlan0 link
 ping www.wangchaochao.top
 ```
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200306165926384.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaWsxMTk0,size_16,color_FFFFFF,t_70)
+![](https://img-blog.csdnimg.cn/20200306165926384.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaWsxMTk0,size_16,color_FFFFFF,t_70)
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200306170156804.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaWsxMTk0,size_16,color_FFFFFF,t_70)
+![](https://img-blog.csdnimg.cn/20200306170156804.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaWsxMTk0,size_16,color_FFFFFF,t_70)
 
 为了方便快捷的连接WiFi，可以把以上命令写成一个shell脚本，需要连接WiFi时，直接执行这个脚本就可以了。先在本地生成WiFi配置信息：
 
@@ -361,7 +367,7 @@ echo "WiFi连接成功"
 
 WiFi账号和密码修改一下，就可以直接使用了。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200306174825851.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaWsxMTk0,size_16,color_FFFFFF,t_70)
+![](https://img-blog.csdnimg.cn/20200306174825851.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaWsxMTk0,size_16,color_FFFFFF,t_70)
 
 ### 6.代码下载
 
@@ -377,4 +383,10 @@ https://gitee.com/whik/qte_2019_ncov
 
 目前界面还比较简单，7寸的显示屏可以显示很多内容，之后会尽量完善界面信息，欢迎大家关注！
 
-> 我的公众号：mcu149
+### 系列教程
+
+- [我用STM32MP1做了个疫情监控平台1—交叉编译环境搭建](https://www.wangchaochao.top/2020/03/04/YA157C-1-Build-cross-compilation-environment/)
+- [我用STM32MP1做了个疫情监控平台2—Qt环境搭建](https://www.wangchaochao.top/2020/03/05/YA157C-2-Building-of-embedded-QT-environment/)
+- [我用STM32MP1做了个疫情监控平台3—疫情监控平台实现](https://www.wangchaochao.top/2020/03/06/YA157C-3-Novel-coronavirus-pneumonia-surveillance-platform-based-on-embedded-Qt/)
+- [我用STM32MP1做了个疫情监控平台4—功能完善界面重新设计](https://www.wangchaochao.top/2020/03/02/YA157C-4-Functional-interface-redesign/)
+

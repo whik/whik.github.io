@@ -27,12 +27,16 @@ www.wangchaochao.top
 
 ### 最新博文
 
-- [iMX287A基于嵌入式Qt的新冠肺炎疫情监控平台](http://www.wangchaochao.top/2020/03/04/iMX287A-4-Novel-coronavirus-pneumonia-surveillance-platform-based-on-embedded-Qt/)
-- [iMX287A嵌入式Qt环境搭建](http://www.wangchaochao.top/2020/03/03/iMX287A-3-Building-of-embedded-QT-environment/)
-- [iMX287A多种方法实现流水灯效果](http://www.wangchaochao.top/2020/03/02/iMX287A-2-Various-methods-to-achieve-the-effect-of-running-water-lamp/)
+- [我用STM32MP1做了个疫情监控平台4—功能完善界面重新设计](https://www.wangchaochao.top/2020/03/02/YA157C-4-Functional-interface-redesign/)
+- [我用STM32MP1做了个疫情监控平台3—疫情监控平台实现](https://www.wangchaochao.top/2020/03/06/YA157C-3-Novel-coronavirus-pneumonia-surveillance-platform-based-on-embedded-Qt/)
+- [我用STM32MP1做了个疫情监控平台2—Qt环境搭建](https://www.wangchaochao.top/2020/03/05/YA157C-2-Building-of-embedded-QT-environment/)
+- [我用STM32MP1做了个疫情监控平台1—交叉编译环境搭建](https://www.wangchaochao.top/2020/03/04/YA157C-1-Build-cross-compilation-environment/)
 
 ### 历史博文
 
+- [iMX287A基于嵌入式Qt的新冠肺炎疫情监控平台](http://www.wangchaochao.top/2020/03/04/iMX287A-4-Novel-coronavirus-pneumonia-surveillance-platform-based-on-embedded-Qt/)
+- [iMX287A嵌入式Qt环境搭建](http://www.wangchaochao.top/2020/03/03/iMX287A-3-Building-of-embedded-QT-environment/)
+- [iMX287A多种方法实现流水灯效果](http://www.wangchaochao.top/2020/03/02/iMX287A-2-Various-methods-to-achieve-the-effect-of-running-water-lamp/)
 - [iMX287A交叉编译环境搭建](http://www.wangchaochao.top/2020/03/01/iMX287A-1-Build-cross-compilation-environment/)
 - [基于Qt的新冠肺炎疫情数据实时监控平台1.1版本](http://www.wangchaochao.top/2020/02/15/qt-ncov-2/)
 - [基于Qt的新冠肺炎疫情数据实时监控平台（开源小项目）](http://www.wangchaochao.top/2020/02/14/qt-ncov)

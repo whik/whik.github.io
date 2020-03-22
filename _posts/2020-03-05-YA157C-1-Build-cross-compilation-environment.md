@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:    YA157C交叉编译环境搭建
+title:    我用STM32MP1做了个疫情监控平台1—交叉编译环境搭建
 subtitle:	嵌入式Linux
 date:       2020-03-05 12:00:00 +0800
 author:     Wang Chao
@@ -11,6 +11,12 @@ tag:
     - Linux
 ---
 
+### 0.系列教程
+
+- [我用STM32MP1做了个疫情监控平台1—交叉编译环境搭建](https://www.wangchaochao.top/2020/03/04/YA157C-1-Build-cross-compilation-environment/)
+- [我用STM32MP1做了个疫情监控平台2—Qt环境搭建](https://www.wangchaochao.top/2020/03/05/YA157C-2-Building-of-embedded-QT-environment/)
+- [我用STM32MP1做了个疫情监控平台3—疫情监控平台实现](https://www.wangchaochao.top/2020/03/06/YA157C-3-Novel-coronavirus-pneumonia-surveillance-platform-based-on-embedded-Qt/)
+- [我用STM32MP1做了个疫情监控平台4—功能完善界面重新设计](https://www.wangchaochao.top/2020/03/02/YA157C-4-Functional-interface-redesign/)
 
 ### 1.开发板简介
 
@@ -18,7 +24,7 @@ tag:
 - 主控芯片：STM32MP157AAC
 - 光盘资料版本：MYD-YA157C-20191225.iso 
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200305214128578.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaWsxMTk0,size_16,color_FFFFFF,t_70)
+![](https://img-blog.csdnimg.cn/20200305214128578.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaWsxMTk0,size_16,color_FFFFFF,t_70)
 
 MYD-YA157C开发套件由核心板MYC-YA157C和底板MYB-YA157C组成，主控芯片是ST目前最高配置的MPU——STM32MP157AAC3，双核Corte-A7+Cortex-M4，主频最高可达650Mhz。
 
@@ -28,7 +34,7 @@ MYD-YA157C开发套件由核心板MYC-YA157C和底板MYB-YA157C组成，主控�
 - USB-TTL模块：115200/8/1/无
 - 网线
 
- ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200305214559782.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaWsxMTk0,size_16,color_FFFFFF,t_70)
+ ![](https://img-blog.csdnimg.cn/20200305214559782.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaWsxMTk0,size_16,color_FFFFFF,t_70)
 
 开发板和主机配置
 
@@ -37,7 +43,7 @@ MYD-YA157C开发套件由核心板MYC-YA157C和底板MYB-YA157C组成，主控�
 - 主机配置：Ubuntu 16.04
 - 主机IP：192.168.1.111
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200305214955466.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaWsxMTk0,size_16,color_FFFFFF,t_70)
+![](https://img-blog.csdnimg.cn/20200305214955466.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaWsxMTk0,size_16,color_FFFFFF,t_70)
 
 ### 2.主机搭建交叉编译环境
 
@@ -67,7 +73,7 @@ meta-toolchain-qt5-openstlinux-eglfs-stm32mp1-x86_64-toolchain-2.6-snapshot.test
 #按[ENTER]键选择默认的安装配置，默认安装在/opt目录下
 ```
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200305181833931.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaWsxMTk0,size_16,color_FFFFFF,t_70)
+![](https://img-blog.csdnimg.cn/20200305181833931.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaWsxMTk0,size_16,color_FFFFFF,t_70)
 
 来看一下是否安装成功了：
 
@@ -90,7 +96,7 @@ This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 ```
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200305183621927.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaWsxMTk0,size_16,color_FFFFFF,t_70)
+![](https://img-blog.csdnimg.cn/20200305183621927.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaWsxMTk0,size_16,color_FFFFFF,t_70)
 
 如果能输出版本信息，就说明安装成功了。
 
@@ -137,7 +143,7 @@ gcc hello.c -o pc.o
 
 看一下这个文件的类型，并执行这个文件。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200305185055927.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaWsxMTk0,size_16,color_FFFFFF,t_70)
+![](https://img-blog.csdnimg.cn/20200305185055927.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaWsxMTk0,size_16,color_FFFFFF,t_70)
 
 可以看出，没有语法错误，生成了pc.o文件，这个文件是运行在x86_64架构系统上，即PC上的，而且运行结果是我们想要的。好了，程序运行没问题，就可以使用arm-gcc来编译这个程序，并生成可以在arm开发板上运行的可执行文件了。再使用交叉编译工具编译这个Ｃ程序，指定输出arm.o文件。
 
@@ -147,7 +153,7 @@ $CC hello.c -o arm.o
 
 语法没有错误，生成了arm.o文件，可以通过file命令查看这个文件的信息。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200305185343574.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaWsxMTk0,size_16,color_FFFFFF,t_70)
+![](https://img-blog.csdnimg.cn/20200305185343574.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaWsxMTk0,size_16,color_FFFFFF,t_70)
 
 因为这个文件是运行在ARM架构的系统上的，所以在PC上不能运行，下面我们把这个文件放到开发板上去运行。
 
@@ -178,7 +184,7 @@ cd /mnt
 
 实际运行：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200305201058392.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaWsxMTk0,size_16,color_FFFFFF,t_70)
+![](https://img-blog.csdnimg.cn/20200305201058392.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaWsxMTk0,size_16,color_FFFFFF,t_70)
 
 同样取消挂载：
 
@@ -190,7 +196,7 @@ cd ~
 umount /mnt
 ```
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200305201322169.png)
+![](https://img-blog.csdnimg.cn/20200305201322169.png)
 
 这种方式有点麻烦，我们来使用另外一种方法。
 
@@ -208,17 +214,17 @@ scp命令是基于物理网口的，在进行传输之前，需要确定开发�
 ifconfig eth0 192.168.1.136 up
 ```
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200305201733509.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaWsxMTk0,size_16,color_FFFFFF,t_70)
+![](https://img-blog.csdnimg.cn/20200305201733509.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaWsxMTk0,size_16,color_FFFFFF,t_70)
 
 - 主机配置IP地址
 
 通过**有线连接**选项，手动配置IPv4地址
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2020030213211031.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaWsxMTk0,size_16,color_FFFFFF,t_70)
+![](https://img-blog.csdnimg.cn/2020030213211031.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaWsxMTk0,size_16,color_FFFFFF,t_70)
 
 开发板和主机互相ping，测试网络是否正常。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200305202447325.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaWsxMTk0,size_16,color_FFFFFF,t_70)
+![](https://img-blog.csdnimg.cn/20200305202447325.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaWsxMTk0,size_16,color_FFFFFF,t_70)
 
 这样就说明是正常的。把PC主机上的arm.o文件传输到开发板上：
 
@@ -228,7 +234,7 @@ scp ~/arm.o root@192.168.1.136:/root
 
 如果出现如下错误：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2020030520295183.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaWsxMTk0,size_16,color_FFFFFF,t_70)
+![](https://img-blog.csdnimg.cn/2020030520295183.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaWsxMTk0,size_16,color_FFFFFF,t_70)
 
 只需要执行一下提示的那一行命令就行了：
 
@@ -238,7 +244,7 @@ ssh-keygen -f "/home/whik/.ssh/known_hosts" -R 192.168.1.136
 
 如果还是报错：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200302175417769.png)那就把knows_host文件删除了
+![](https://img-blog.csdnimg.cn/20200302175417769.png)那就把knows_host文件删除了
 
 ```shell
 rm ~/.ssh/know_hosts
@@ -246,13 +252,13 @@ rm ~/.ssh/know_hosts
 
 再执行scp命令：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200305203033212.png)
+![](https://img-blog.csdnimg.cn/20200305203033212.png)
 
 先输入yes，下面会显示传输的进度。
 
 到开发板上看一下：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200305203106619.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaWsxMTk0,size_16,color_FFFFFF,t_70)
+![](https://img-blog.csdnimg.cn/20200305203106619.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaWsxMTk0,size_16,color_FFFFFF,t_70)
 
 可以看到，和PC上的运行结果是一样的。
 
@@ -304,7 +310,7 @@ TFTP_DIRECTORY="/home/whik/ya157c/ftp"
 sudo service tftpd-hpa restart
 ```
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2020030520462013.png)
+![](https://img-blog.csdnimg.cn/2020030520462013.png)
 
 开发板获取主机192.168.1.111上共享目录下的a.cpp文件，并重新命名为b.cpp保存到本地
 
@@ -316,7 +322,7 @@ tftp 192.168.1.111 -g -r a.cpp -l b.cpp
 tftp 192.168.1.111 -g -r a.cpp
 ```
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200305205402263.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaWsxMTk0,size_16,color_FFFFFF,t_70)
+![](https://img-blog.csdnimg.cn/20200305205402263.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaWsxMTk0,size_16,color_FFFFFF,t_70)
 
 参数说明：
 
@@ -335,7 +341,7 @@ tftp 192.168.1.111 -g -r a.cpp
 ssh root@192.168.1.136
 ```
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200305213445532.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaWsxMTk0,size_16,color_FFFFFF,t_70)
+![](https://img-blog.csdnimg.cn/20200305213445532.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaWsxMTk0,size_16,color_FFFFFF,t_70)
 
 ### 6.注意
 
@@ -396,7 +402,11 @@ chmod +x led_blink.sh
 ./led_blink.sh
 ```
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200306120648741.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaWsxMTk0,size_16,color_FFFFFF,t_70)
+![](https://img-blog.csdnimg.cn/20200306120648741.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaWsxMTk0,size_16,color_FFFFFF,t_70)
 
+### 系列教程
 
-> 我的公众号：mcu149
+- [我用STM32MP1做了个疫情监控平台1—交叉编译环境搭建](https://www.wangchaochao.top/2020/03/04/YA157C-1-Build-cross-compilation-environment/)
+- [我用STM32MP1做了个疫情监控平台2—Qt环境搭建](https://www.wangchaochao.top/2020/03/05/YA157C-2-Building-of-embedded-QT-environment/)
+- [我用STM32MP1做了个疫情监控平台3—疫情监控平台实现](https://www.wangchaochao.top/2020/03/06/YA157C-3-Novel-coronavirus-pneumonia-surveillance-platform-based-on-embedded-Qt/)
+- [我用STM32MP1做了个疫情监控平台4—功能完善界面重新设计](https://www.wangchaochao.top/2020/03/02/YA157C-4-Functional-interface-redesign/)
