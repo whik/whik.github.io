@@ -1,6 +1,5 @@
 <h2 style = "text align: left" > Wang Chao's blog </h2>
-<h5 style = "text align: left" > The world kisses me with pain, and I want to return it with a song </h5>
-<p align="left"> www.wangchaochao.top </p>
+<p align="left">One night I burned all my memories, and then my dream became transparent. One morning I threw away all yesterday, and then my steps became light.</p>
 ---
 
 ### Why build this independent blog

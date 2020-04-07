@@ -1,6 +1,5 @@
 <h2 style="text-align:left">王超的独立博客</h2>
-<h5 style="text-align:left">世界以痛吻我，我要报之以歌</h5>
-<p align="left"> www.wangchaochao.top </p>
+<p align="left">有一个夜晚我烧毁了所有的记忆，从此我的梦就透明了；有一个早晨我扔掉了所有的昨天，从此我的脚步就轻盈了。</p>
 ---
 
 ### 为什么要开这个独立博客
