@@ -265,7 +265,7 @@
     $(document).ready(function() {
 
         var int = setInterval(fixCount, 50);  // 50ms周期检测函数
-        var countOffset = 20000;  // 初始化首次数据
+        var countOffset = 0;  // 初始化首次数据
 
         function fixCount() {            
            if (document.getElementById("busuanzi_container_site_pv").style.display != "none")
