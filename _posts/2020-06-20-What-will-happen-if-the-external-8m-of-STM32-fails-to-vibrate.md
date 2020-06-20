@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:    [踩坑]STM32外部8M不起振会有什么现象？
+title:    STM32外部8M不起振会有什么现象？
 subtitle:	STM32踩坑记录 
 date:       2020-06-20 16:00:00 +0800
 author:     Wang Chao
