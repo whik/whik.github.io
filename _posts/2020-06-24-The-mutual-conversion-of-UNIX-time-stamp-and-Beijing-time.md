@@ -57,9 +57,11 @@ struct tm {
 
 ```c
 
+/*
 年份自1900算起，转换为实际年份，要+1900
 月份范围0-11，转换为实际月份，要+1
 星期范围0-6，转换为实际星期，要+1
+*/
 
 ```
 
@@ -68,21 +70,27 @@ struct tm {
 ```c
 
 struct tm * localtime(const time_t *);
-给定一个毫秒级时间戳，返回时间结构体
+/* 给定一个毫秒级时间戳，返回时间结构体 */
 
 time_t mktime(struct tm *);
+/*
 给定一个初始化完成的时间结构体，返回一个毫秒级时间戳，
 转换时不考虑tm结构的tm_wday和tm_yday，仅用tm_mday来决定日期。
+*/
 
 size_t strftime(char *strDest, size_t maxsize, const char *format, const struct tm *timeptr);
+/*
 给定一个时间结构体，格式化输出字符串，格式化字符可参考
 https://baike.baidu.com/item/strftime
+*/
 
+/*
 示例：
 char str[100];
 strftime(str, 100, "%F %T", time);  /* 2020-07-01 02:16:51 */
 strftime(str, 100, "%m-%d %H:%M", time);  /* 06-30 22:16 */
 printf("%s\n", str);
+*/
 
 ```
 
