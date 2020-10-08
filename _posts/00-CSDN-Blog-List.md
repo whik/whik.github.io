@@ -1,7 +1,10 @@
-
 ### 关于这篇文章
 
 为了方便各位朋友查看历史文章，也方便我自己查找，把我的CSDN博客所有的文章链接单独整理成一篇文章，如下。不知不觉，原来自己已经写了这么多篇文章了，坚持！另外，我的**个人博客**和**个人公众号**也会同步更新！
+
+```c
+^[ \t]*\n
+```
 
 - 我的博客：**[www.wangchaochao.top](http://www.wangchaochao.top/)**
 - 我的公众号：**[mcu149](https://imgconvert.csdnimg.cn/aHR0cHM6Ly93Y2MtYmxvZy5vc3MtY24tYmVpamluZy5hbGl5dW5jcy5jb20vaW1nLyVFNiVCMSU4MiVFNSU4NSVCMyVFNiVCMyVBOC5qcGc?x-oss-process=image/format,png)**
@@ -10,14 +13,93 @@
 
 ### 最新文章
 
-- [详解串行通信协议及其FPGA实现](https://blog.csdn.net/whik1194/article/details/100045301)
-- [ST32F407外部晶振改为25M后芯片死机检测不到芯片的解决办法](https://blog.csdn.net/whik1194/article/details/99306435)
-- [阿里平头哥首次交货——玄铁910是个啥？是芯片吗？](https://blog.csdn.net/whik1194/article/details/97612298)
+- [CRC校验原理及其C语言实现](https://blog.csdn.net/whik1194/article/details/108837493)
+- [21个常用的CRC参数模型C语言实现](https://blog.csdn.net/whik1194/article/details/108837333)
+- [Keil环境下使用Jansson构建JSON——基于STM32F103](https://blog.csdn.net/whik1194/article/details/108596840)
 
 ### 历史文章
 
+#### 2020年
+
+- [CRC校验原理及其C语言实现](https://blog.csdn.net/whik1194/article/details/108837493)
+- [21个常用的CRC参数模型C语言实现](https://blog.csdn.net/whik1194/article/details/108837333)
+- [Keil环境下使用Jansson构建JSON——基于STM32F103](https://blog.csdn.net/whik1194/article/details/108596840)
+- [SmartFusion从FPGA到ARM（十）——CoreGPIO的使用](https://blog.csdn.net/whik1194/article/details/108520285)
+- [C语言查表法实现CRC-16计算](https://blog.csdn.net/whik1194/article/details/108518336)
+- [C语言查表法实现CRC-32计算IEEE 802.3标准](https://blog.csdn.net/whik1194/article/details/108510805)
+- [SmartFusion从FPGA到ARM（九）——串口命令解析器的实现](https://blog.csdn.net/whik1194/article/details/108490513)
+- [SmartFusion从FPGA到ARM（八）——CoreUARTapb的使用](https://blog.csdn.net/whik1194/article/details/108490277)
+- [SmartFusion从FPGA到ARM（七）——MSS_UART的使用](https://blog.csdn.net/whik1194/article/details/108409593)
+- [SmartFusion从FPGA到ARM（六）——SoftConsole链接脚本说明](https://blog.csdn.net/whik1194/article/details/108404516)
+- [SmartFusion从FPGA到ARM（五）——如何获取固件库和使用例程](https://blog.csdn.net/whik1194/article/details/107504645)
+- [二进制和格雷码之间的转换](https://blog.csdn.net/whik1194/article/details/107463830)
+- [RAM、FIFO、单口RAM、真双口RAM、伪双口RAM的区别](https://blog.csdn.net/whik1194/article/details/107385799)
+- [FPGA单比特信号跨时钟域处理](https://blog.csdn.net/whik1194/article/details/107376821)
+- [SmartFusion从FPGA到ARM（四）——MSS_TIMER定时器的使用](https://blog.csdn.net/whik1194/article/details/107115886)
+- [SmartFusion从FPGA到ARM（三）——SysTick延时函数和GPIO位带操作](https://blog.csdn.net/whik1194/article/details/107109074)
+- [SmartFusion从FPGA到ARM（二）——MSS_GPIO外部中断和输入](https://blog.csdn.net/whik1194/article/details/107109018)
+- [SmartFusion从FPGA到ARM系列教程](https://blog.csdn.net/whik1194/article/details/107104960)
+- [SmartFusion从FPGA到ARM（一）——MSS_GPIO点灯](https://blog.csdn.net/whik1194/article/details/107079627)
+- [Microsemi Libero系列教程（六）——Identify片上逻辑分析仪的使用](https://blog.csdn.net/whik1194/article/details/107074187)
+- [Microsemi Libero使用技巧9——关于FlashPro下载器](https://blog.csdn.net/whik1194/article/details/107072484)
+- [关于SPI Flash那些你不知道的事儿 ](https://blog.csdn.net/whik1194/article/details/106957203)
+- [UNIX时间戳和北京时间的相互转换](https://blog.csdn.net/whik1194/article/details/106949811)
+- [Keil环境下Jansson解析库的使用——基于STM32F103](https://blog.csdn.net/whik1194/article/details/106872260)
+- [JLink-OB下载程序失败解决版本（附JFlash任意版本程序下载地址）](https://blog.csdn.net/whik1194/article/details/106576439)
+- [[评测]灵动半导体MM32W3蓝牙开发板开箱报告](https://blog.csdn.net/whik1194/article/details/106482920)
+- [Microsemi Libero使用技巧8——片上时钟和PLL的使用](https://blog.csdn.net/whik1194/article/details/106289184)
+- [如何从零写一个串口printf函数](https://blog.csdn.net/whik1194/article/details/106281694)
+- [Microsemi SmartFusion系列FPGA简介](https://blog.csdn.net/whik1194/article/details/105567203)
+- [Microsemi Libero系列教程（五）——ModelSim的使用](https://blog.csdn.net/whik1194/article/details/105543283)
+- [Microsemi Libero使用技巧7——离线安装IP Core](https://blog.csdn.net/whik1194/article/details/105522541)
+- [Microsemi Libero系列教程（四）——PLL的使用](https://blog.csdn.net/whik1194/article/details/105521898)
+- [Microsemi Libero系列教程（三）——MSS_IO的使用](https://blog.csdn.net/whik1194/article/details/105521317)
+- [个人博客如何申请ICP备案 ](https://blog.csdn.net/whik1194/article/details/105470612)
+- [我用STM32MP1做了个疫情监控平台4—功能完善界面重新设计 ](https://blog.csdn.net/whik1194/article/details/105025720)
+- [Qt QML自定义相机照片保存路径](https://blog.csdn.net/whik1194/article/details/105001329)
+- [Qt QML状态states的使用](https://blog.csdn.net/whik1194/article/details/104837441)
+- [Qt QML自定义实现带图标的按钮](https://blog.csdn.net/whik1194/article/details/104815042)
+- [Qt字体图标库fontawesome和pixeden使用示例](https://blog.csdn.net/whik1194/article/details/104752665)
+- [我用STM32MP1做了个疫情监控平台3—疫情监控平台实现](https://blog.csdn.net/whik1194/article/details/104698287)
+- [我用STM32MP1做了个疫情监控平台2—Qt环境搭建](https://blog.csdn.net/whik1194/article/details/104685268)
+- [我用STM32MP1做了个疫情监控平台1—交叉编译环境搭建](https://blog.csdn.net/whik1194/article/details/104653916)
+- [iMX287A基于嵌入式Qt的新冠肺炎疫情监控平台](https://blog.csdn.net/whik1194/article/details/104651816)
+- [iMX287A嵌入式Qt环境搭建](https://blog.csdn.net/whik1194/article/details/104635825)
+- [iMX287A多种方法实现流水灯效果 ](https://blog.csdn.net/whik1194/article/details/104639521)
+- [iMX287A交叉编译环境搭建](https://blog.csdn.net/whik1194/article/details/104609647)
+- [基于Qt的新冠肺炎疫情数据实时监控平台1.1版本](https://blog.csdn.net/whik1194/article/details/104336450)
+- [基于Qt的新冠肺炎疫情数据实时监控平台（开源小项目）](https://blog.csdn.net/whik1194/article/details/104300691)
+
 #### 2019年
 
+- [织女星开发板使用RISC-V核驱动GPIO](https://blog.csdn.net/whik1194/article/details/103651739)
+- [全平台轻量开源verilog仿真工具iverilog+GTKWave使用教程](https://blog.csdn.net/whik1194/article/details/103377834)
+- [Microsemi Libero系列教程（全网首发）](https://blog.csdn.net/whik1194/article/details/102901710)
+- [Microsemi Libero使用技巧6——FPGA全局网络的设置](https://blog.csdn.net/whik1194/article/details/103326233)
+- [详解EMC测试国家标准GB/T 17626](https://blog.csdn.net/whik1194/article/details/103223618)
+- [电路板上的这些标志你都知道是什么含义吗？——详解电子产品认证类型](https://blog.csdn.net/whik1194/article/details/103107942)
+- [手把手教你DIY尼康ML-L3红外遥控器](https://blog.csdn.net/whik1194/article/details/103101049)
+- [《手把手教你设计CPU——RISC-V处理器》读书笔记](https://blog.csdn.net/whik1194/article/details/102891068)
+- [基于STM32的RGB调色器——STM32程序和Qt上位机全开源](https://blog.csdn.net/whik1194/article/details/102750994)
+- [千呼万唤始出来——uFUN开发板2.0开箱评测](https://blog.csdn.net/whik1194/article/details/102576012)
+- [Microsemi Libero使用技巧5——使用FlashPro生成stp程序文件](https://blog.csdn.net/whik1194/article/details/102548175)
+- [Microsemi Libero使用技巧4——使用命令行模式下载程序](https://blog.csdn.net/whik1194/article/details/102468751)
+- [BAT批处理基本命令总结](https://blog.csdn.net/whik1194/article/details/102468810)
+- [CSDN博文如何添加目录](https://blog.csdn.net/whik1194/article/details/101863292)
+- [Microsemi Libero使用技巧3——使用FlashPro单独下载程序](https://blog.csdn.net/whik1194/article/details/101862801)
+- [Microsemi Libero使用技巧2——使用第三方编辑器Notepad++](https://blog.csdn.net/whik1194/article/details/101779693)
+- [Microsemi Libero使用技巧1——查看芯片资源占用情况](https://blog.csdn.net/whik1194/article/details/101777808)
+- [Microsemi Libero系列教程（二）——新建点灯工程](https://blog.csdn.net/whik1194/article/details/101714930)
+- [东芝开发板驱动OLED模块显示LOGO图片](https://blog.csdn.net/whik1194/article/details/100855828)
+- [东芝MCU实现位带操作](https://blog.csdn.net/whik1194/article/details/100639815)
+- [使用系统定时器SysTick实现精确延时微秒和毫秒函数](https://blog.csdn.net/whik1194/article/details/100639437)
+- [FPGA开发中实现信号的展宽和延时](https://blog.csdn.net/whik1194/article/details/100559179)
+- [FPGA编程中"打拍"的目的](https://blog.csdn.net/whik1194/article/details/100559072)
+- [东芝半导体最新ARM开发板——TT_M3HQ开箱评测](https://blog.csdn.net/whik1194/article/details/100165953)
+- [我的博客文章汇总](https://blog.csdn.net/whik1194/article/details/100057568)
+- [详解串行通信协议及其FPGA实现](https://blog.csdn.net/whik1194/article/details/100045301)
+- [STM32F407外部晶振改为25M后芯片死机检测不到芯片的解决办法](https://blog.csdn.net/whik1194/article/details/99306435)
+- [阿里平头哥首次交货——玄铁910是个啥？是芯片吗？](https://blog.csdn.net/whik1194/article/details/97612298)
 - [Qt平台下使用QJson解析和构建JSON字符串](https://blog.csdn.net/whik1194/article/details/97041493)
 - [使用cJSON库解析和构建JSON字符串](https://blog.csdn.net/whik1194/article/details/96775922)
 - [织女星开发板RISC-V内核实现微秒级精确延时](https://blog.csdn.net/whik1194/article/details/94066432)
@@ -79,10 +161,6 @@
 
 - 我的博客：**[www.wangchaochao.top](http://www.wangchaochao.top/)**
 - 我的公众号：**[mcu149](https://imgconvert.csdnimg.cn/aHR0cHM6Ly93Y2MtYmxvZy5vc3MtY24tYmVpamluZy5hbGl5dW5jcy5jb20vaW1nLyVFNiVCMSU4MiVFNSU4NSVCMyVFNiVCMyVBOC5qcGc?x-oss-process=image/format,png)**
-
 ![](https://imgconvert.csdnimg.cn/aHR0cHM6Ly93Y2MtYmxvZy5vc3MtY24tYmVpamluZy5hbGl5dW5jcy5jb20vaW1nLyVFNiVCMSU4MiVFNSU4NSVCMyVFNiVCMyVBOC5qcGc?x-oss-process=image/format,png)
 
 > 感谢关注！
-
-
-
