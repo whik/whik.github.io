@@ -103,24 +103,16 @@ friends: [
         href: "https://wcc-blog.oss-cn-beijing.aliyuncs.com/img/%E6%B1%82%E5%85%B3%E6%B3%A8.jpg"
     },
     {
+        title: "CSDN",
+        href: "https://blog.csdn.net/whik1194"
+    },
+    {
         title: "知乎专栏",
         href: "https://zhuanlan.zhihu.com/mcu149"
     },   
     {
         title: "RSS订阅",
         href: "https://blog.csdn.net/whik1194/rss/list"
-    },
-    {
-        title: "CSDN",
-        href: "https://blog.csdn.net/whik1194"
-    },
-    {
-        title: "博客园",
-        href: "https://www.cnblogs.com/whik"
-    },
-    {
-        title: "微录博客",
-        href: "http://www.blogtextbook.com/"
     }
 ]
 
