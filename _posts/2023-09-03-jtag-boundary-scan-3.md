@@ -1,6 +1,6 @@
 ---
 layout:     post
-title: 强大的边界扫描（3）：常用边界扫描测试软件
+title: 强大的JTAG边界扫描（3）：常用边界扫描测试软件
 subtitle: 常用边界扫描测试软件
 date:       2023-09-03 11:57:00 +0800
 author:     Wang Chao
